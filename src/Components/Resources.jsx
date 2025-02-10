@@ -2,6 +2,7 @@ import * as React from 'react';
 import Gallery from './Gallery';
 import Videos from './Videos';
 import PropTypes from 'prop-types';
+import SelarBooks from "./SelarBooks";
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Box from '@mui/material/Box';
@@ -49,14 +50,20 @@ export default function BasicTabs() {
           {/* <Tab label="Books" {...a11yProps(0)} /> */}
           <Tab label="Videos" {...a11yProps(0)} />
           <Tab label="Gallery" {...a11yProps(1)} />
+          <Tab label="Books" {...a11yProps(2)} />
         </Tabs>
       </Box>
 
-      <Resources value={value} index={1}>
+      <Resources value={value} index={0}>
         <Videos />
       </Resources>
-      <Resources value={value} index={2}>
+      <Resources value={value} index={1}>
         <Gallery />
+      </Resources>
+      <Resources value={value} index={2}>
+
+        <SelarBooks />
+
       </Resources>
     </Box>
   );

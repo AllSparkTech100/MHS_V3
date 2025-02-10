@@ -10,6 +10,7 @@ import { FaArrowCircleRight, FaDonate } from "react-icons/fa";
 import Feedback from "../Components/Feedback";
 import Frequent from "../Components/Frequent";
 
+
 function Home() {
   return (
     <>
@@ -24,7 +25,7 @@ function Home() {
                 <a href="https://www.facebook.com/profile.php?id=61556235412055&mibextid=ZbWKwL" target='blank' className=" text-white uppercase font-semibold ">Join Us</a>
               </button>
               <button className="bg-green-600 px-6 py-3 rounded-md lg:transition-all inline-block lg:hover:scale-90 ">
-                <a href="http://" className=" text-white uppercase font-semibold ">Learn More</a>
+                <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Flinktr.ee%2Falexandercomfort%3Futm_source%3Dlinktree_profile_share%26ltsid%3Df41c21af-fc50-4521-9a94-8f4f088fcfeb%26fbclid%3DIwZXh0bgNhZW0CMTAAAR1jZoEUfub2UwRBCrNfsAKlruLKWWuNkB99SY6UokFvuyxKFdoDwodGJSk_aem_1z5xpQW77wyTs184hGKEjg&h=AT1GVz_COQdBbxpc5hCN4Fx6AMQdLR0ozt1N8dmn0lFm1AkNbDJOpFD5iYFfY3xX5WzbixvoysVJzjzbm8_IEaoUNCzmVbb1LSjhMaZYQG9vFLUYbKxI4_sowzGs4xkoQv3xPg" className=" text-white uppercase font-semibold ">Learn More</a>
               </button>
             </div>
           </div>
@@ -234,6 +235,7 @@ function Home() {
       <div >
         <Frequent />
       </div>
+      
     </>
   );
 }

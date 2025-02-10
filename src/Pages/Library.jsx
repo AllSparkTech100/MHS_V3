@@ -1,5 +1,5 @@
 import Resources from "../Components/Resources"
-import SelarBooks from "../Components/SelarBooks"
+// import SelarBooks from "../Components/SelarBooks"
 
 function Library() {
   return (
@@ -20,9 +20,7 @@ function Library() {
       <div className="mt-40">
         <Resources />
       </div>
-      <div className="mx-auto container">
-        <SelarBooks/>
-      </div>
+     
     </>
   )
 }

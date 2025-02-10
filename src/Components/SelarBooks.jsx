@@ -1,44 +1,29 @@
-import Card from '@mui/material/Card';
-import Box from '@mui/material/Box';
-import Chip from '@mui/material/Chip';
-import Stack from '@mui/material/Stack';
-import Divider from '@mui/material/Divider';
-import Typography from '@mui/material/Typography';
+
 
 
 function SelarBooks() {
     return (
-        <Card variant="outlined" sx={{ maxWidth: 360 }}>
-            <Box sx={{ p: 2 }}>
-                <Stack
-                    direction="row"
-                    sx={{ justifyContent: 'space-between', alignItems: 'center' }}
-                >
-                    <Typography gutterBottom variant="h5" component="div">
-                        Toothbrush
-                    </Typography>
-                    <Typography gutterBottom variant="h6" component="div">
-                        $4.50
-                    </Typography>
-                </Stack>
-                <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-                    Pinstriped cornflower blue cotton blouse takes you on a walk to the park or
-                    just down the hall.
-                </Typography>
-            </Box>
-            <Divider />
-            <Box sx={{ p: 2 }}>
-                <Typography gutterBottom variant="body2">
-                    Select type
-                </Typography>
-                <Stack direction="row" spacing={1}>
-                    <Chip color="primary" label="Soft" size="small" />
-                    <Chip label="Medium" size="small" />
-                    <Chip label="Hard" size="small" />
-                </Stack>
-            </Box>
-        </Card>
-       
+        <>
+            <div className="h-auto grid mt-30 grid-cols-3 p-4">
+
+                <div className="flex items-center justify-center gap-3 h-72 w-80 lg:w-96 overflow-hidden rounded-lg shadow-lg shadow-black bg-white/50">
+                    <div className="h-full w-80">
+                        <img src="/firstbook.png" alt="" className="object-cover h-full w-full" />
+                    </div>
+
+                    <div className="p-3">
+                        <h4 className="my-5 capitalize fw-medium text-md lg:text-lg text-black">
+                            get a copy of our e-book on selar
+                        </h4>
+                        <button className="py-3 px-5 rounded-sm bg-green-800 flex items-center justify-center">
+                            <a href="https://selar.com/mentalhealthfirstaid?" className="capitalize text-white font-bold" target="_blank" >Buy now</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </>
+
     );
 }
 
