@@ -1,4 +1,5 @@
 import Resources from "../Components/Resources"
+import SelarBooks from "../Components/SelarBooks"
 
 function Library() {
   return (
@@ -18,6 +19,9 @@ function Library() {
       </div>
       <div className="mt-40">
         <Resources />
+      </div>
+      <div className="fixxed">
+        <SelarBooks/>
       </div>
     </>
   )

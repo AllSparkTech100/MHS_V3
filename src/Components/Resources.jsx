@@ -46,19 +46,17 @@ export default function BasicTabs() {
     <Box sx={{ width: '100%' }}>
       <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
         <Tabs value={value} onChange={handleChange} aria-label="basic tabs example" centered>
-          <Tab label="Books" {...a11yProps(0)} />
-          <Tab label="Videos" {...a11yProps(1)} />
-          <Tab label="Gallery" {...a11yProps(2)} />
+          {/* <Tab label="Books" {...a11yProps(0)} /> */}
+          <Tab label="Videos" {...a11yProps(0)} />
+          <Tab label="Gallery" {...a11yProps(1)} />
         </Tabs>
       </Box>
-      <Resources value={value} index={0}>
-        {/* Books */}
-      </Resources>
+
       <Resources value={value} index={1}>
         <Videos />
       </Resources>
       <Resources value={value} index={2}>
-       <Gallery/>
+        <Gallery />
       </Resources>
     </Box>
   );

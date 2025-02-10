@@ -44,8 +44,6 @@ function Videos() {
                                     </CardActionArea>
                                 </Card>
                             </div>
-
-
                         )
                     })}
                 </div>
