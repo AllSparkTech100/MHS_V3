@@ -20,7 +20,7 @@ function Library() {
       <div className="mt-40">
         <Resources />
       </div>
-      <div className="fixxed">
+      <div className="mx-auto container">
         <SelarBooks/>
       </div>
     </>
