@@ -6,7 +6,7 @@ function SelarBooks() {
         <>
             <div className="h-auto grid mt-30 grid-cols-3 p-4">
 
-                <div className="flex items-center justify-center gap-3 h-72 w-80 lg:w-96 overflow-hidden rounded-lg shadow-lg shadow-black bg-white/50">
+                <div className="flex items-center justify-center gap-3 h-72 w-80 lg:w-96 overflow-hidden rounded-lg shadow-md shadow-black bg-white/50">
                     <div className="h-full w-80">
                         <img src="/firstbook.png" alt="" className="object-cover h-full w-full" />
                     </div>
