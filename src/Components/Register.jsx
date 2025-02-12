@@ -16,17 +16,22 @@ export default function Register() {
     const hours = String(Math.floor((ms / (1000 * 60 * 60)) % 24)).padStart(2, '0');
     const minutes = String(Math.floor((ms / (1000 * 60)) % 60)).padStart(2, '0');
     const seconds = String(Math.floor((ms / 1000) % 60)).padStart(2, '0');
-    return `${days}d : ${hours}h : ${minutes}m : ${seconds}s`;
+    return `${days} Days : ${hours} Hrs : ${minutes} Min : ${seconds} Sec`;
   };
 
   return (
-    <div className="sticky top-0 w-full bg-green-900 text-white flex items-center gap-4 justify-between p-3 px-6 shadow-lg">
-      <p className="text-lg uppercase font-semibold">ph sane conference <span className="font-bold">2.0</span></p>
-      <p className="text-xl font-bold">{formatTime(timeLeft)}</p>
-      <button className="flex items-center gap-2 bg-cyan-400 text-blue-900 px-4 py-2 rounded-lg font-semibold hover:bg-cyan-500">
-        
-         View offer
-      </button>
+    <div className='hidden lg:block 
+     '>
+      <div className="fixed top-17  w-full bg-slate-900 text-white flex items-center gap-4 justify-between p-3 px-6 shadow-lg">
+        <p className="text-lg uppercase font-semibold">ph sane conference <span className="font-bold">2.0</span></p>
+        <p className="text-xl font-bold">{formatTime(timeLeft)}</p>
+        <button className="flex items-center gap-2 bg-cyan-400 text-blue-900 px-4 py-2 rounded-lg font-semibold hover:bg-cyan-500">
+          <a href="http://" target="_blank" rel="noopener noreferrer">
+
+            Register Now
+          </a>
+        </button>
+      </div>
     </div>
   );
 }

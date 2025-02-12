@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { IoClose, IoMenuSharp } from "react-icons/io5";
+import Register from './Register';
+
 
 
 function Header() {
@@ -65,7 +67,9 @@ function Header() {
             </div>
           </div>
         )}
+        <Register />
       </header>
+
     </>
   );
 }
