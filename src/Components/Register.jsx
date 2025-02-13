@@ -20,13 +20,12 @@ export default function Register() {
   };
 
   return (
-    <div className='hidden lg:block 
-     '>
-      <div className="fixed top-17  w-full bg-slate-900 text-white flex items-center gap-4 justify-between p-3 px-6 shadow-lg">
-        <p className="text-lg uppercase font-semibold">ph sane conference <span className="font-bold">2.0</span></p>
-        <p className="text-xl font-bold">{formatTime(timeLeft)}</p>
-        <button className="flex items-center gap-2 bg-cyan-400 text-blue-900 px-4 py-2 rounded-lg font-semibold hover:bg-cyan-500">
-          <a href="http://" target="_blank" rel="noopener noreferrer">
+    <div className='hidden lg:block '>
+      <div className="fixed top-17 bg-slate-900 w-full bg-center text-white flex items-center gap-4 justify-between p-3 px-6 shadow-lg">
+        <p className="text-lg uppercase font-semibold ">port-harcourt sane conference <span className="font-bold">2.0</span></p>
+        <p className="text-xl font-bold ">{formatTime(timeLeft)}</p>
+        <button className="flex items-center gap-2 bg-green-600 text-white-900 px-4 py-2 rounded-lg font-semibold hover:bg-blue-500">
+          <a href="https://forms.gle/NUfgdDNu23USV6FW8" target="_blank" rel="noopener noreferrer">
 
             Register Now
           </a>

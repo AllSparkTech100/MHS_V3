@@ -34,7 +34,7 @@ function Frequent() {
                         </h4><p className="my-2 text-lg">
                             your privacy and comfort is our priority!!
                         </p>
-                        <button className="mt-3 items-center justify-center p-2 lg:p-4 outline-none lg:transition-all  lg:hover:scale-90  bg-[#02514b] flex gap-3 rounded-lg text-white">
+                        <button className="mt-3 items-center justify-center p-3 lg:p-4 outline-none lg:transition-all  lg:hover:scale-90  bg-[#02514b] flex gap-3 rounded-lg text-white">
                             <span><IoCall size={25} /></span>
                             <a href="tel:+2348149944531">+2348149944531</a>
                         </button>

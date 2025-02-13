@@ -1,6 +1,6 @@
 import { dir_img } from "../lib/Images";
 import { FaSearch, FaRegCircle, FaUserFriends } from "react-icons/fa";
-import { BsChatSquareDotsFill } from "react-icons/bs"; 
+import { BsChatSquareDotsFill } from "react-icons/bs";
 import Frequent from '../Components/Frequent';
 
 
@@ -116,20 +116,15 @@ function About() {
         </div>
       </div>
 
-      {/* Questions */} 
-      <div>
-          <Frequent/>
-        </div>
-      
       {/* Description of the CEO */}
       <section className="mt-40">
         <div className="container w-full mx-auto p-4 rounded-lg">
 
-        <div className="text-center my-10 font-bold">
-          <h4 className="uppercase text-xl lg:text-2xl">
-get to know our ceo
-          </h4>
-        </div>
+          <div className="text-center my-10 font-bold">
+            <h4 className="uppercase text-xl lg:text-2xl">
+              get to know our ceo
+            </h4>
+          </div>
           <div className="h-auto relative  rounded-2xl flex flex-col lg:flex-row-reverse gap-3 lg:gap-6 w-full py-10 px-4 items-center justify-around ">
             {/* CEO img */}
             <div className="">
@@ -151,14 +146,14 @@ get to know our ceo
             {/* CEO description */}
             <div className=" mt-8 flex-1 lg:w-full lg:m-0 text-black">
               <div className="text-center">
-                <h3 className="font-bold text-2xl uppercase">
+                <h3 className="font-bold text-lg lg:text-2xl uppercase">
                   Alexander comfort
                 </h3>
-                <div className="italic my-2 uppercase">
+                <div className="italic my-2 text-md lg:text-lg uppercase">
                   the girl who stood up for mental health in nigeria
                 </div>
               </div>
-              <hr className="border-2 rounded-lg border-blue-700" />
+              <hr className="border-2 rounded-lg border-slate-900" />
               <div className="mt-8 text-justify">
                 <p className="mt-4">
                   She is a practicing counseling psychologist specializing in
@@ -191,6 +186,12 @@ get to know our ceo
           </div>
         </div>
       </section>
+
+
+      {/* Questions */}
+      <div>
+        <Frequent />
+      </div>
     </>
   );
 }

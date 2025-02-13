@@ -15,10 +15,10 @@ function Abuja() {
         { src: "/Abjt/aj7.webp" },
         { src: "/Abjt/aj8.webp" },
         { src: "/Abjt/aj9.webp" },
-        { src: "/Abjt/aj10.webp"},
-        { src: "/Abjt/aj11.webp"},
-        { src: "/Abjt/aj12.webp"},
-        { src: "/Abjt/aj13.webp"},
+        { src: "/Abjt/aj10.webp" },
+        { src: "/Abjt/aj11.webp" },
+        { src: "/Abjt/aj12.webp" },
+        { src: "/Abjt/aj13.webp" },
         { src: "/Abjt/aj14.webp" },
         { src: "/Abjt/aj15.webp" },
         { src: "/Abjt/aj16.webp" },
@@ -33,22 +33,22 @@ function Abuja() {
                     perPage: 2,
                     gap: "1rem",
                     autoplay: true,
+                    focus: "center",
                     interval: 2000,
                     pagination: false,
                     breakpoints: {
                         1024: { perPage: 2 },
                         640: { perPage: 1 },
                     },
-                }}
-            // aria-label="Gallery Slider"
-            >
+                }}>
+
                 {images.map((image) => (
                     <SplideSlide key={image.id}>
                         <div className="relative overflow-hidden rounded-lg shadow-md">
                             <img
                                 src={image.src}
                                 alt='Abuja Therapy'
-                                className="w-full h-64 lg:h-72 object-cover" loading="lazy"
+                                className="w-full h-64 lg:h-80 object-cover" loading="lazy"
                             />
                         </div>
                     </SplideSlide>

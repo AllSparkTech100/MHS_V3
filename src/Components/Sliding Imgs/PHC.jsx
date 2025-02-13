@@ -30,12 +30,12 @@ function PHC() {
                     autoplay: true,
                     interval: 2000,
                     pagination: false,
+                    focus: "center",
                     breakpoints: {
                         1024: { perPage: 2 },
                         640: { perPage: 1 },
                     },
                 }}
-            // aria-label="Gallery Slider"
             >
                 {images.map((image) => (
                     <SplideSlide key={image.id}>
@@ -43,7 +43,7 @@ function PHC() {
                             <img
                                 src={image.src}
                                 alt='Portharcourt Therapy'
-                                className="w-full h-64 lg:h-72 object-cover" loading="lazy"
+                                className="w-full h-64 lg:h-80  object-cover" loading="lazy"
                             />
                         </div>
                     </SplideSlide>
