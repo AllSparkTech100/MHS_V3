@@ -35,6 +35,7 @@ function PHC() {
                         1024: { perPage: 2 },
                         640: { perPage: 1 },
                     },
+                    lazyLoading: "sequential",
                 }}
             >
                 {images.map((image) => (
