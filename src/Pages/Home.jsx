@@ -25,7 +25,7 @@ function Home() {
                 <a href="https://www.facebook.com/profile.php?id=61556235412055&mibextid=ZbWKwL" target='blank' className=" text-white uppercase font-semibold ">Join Us</a>
               </button>
               <button className="bg-green-600 px-6 py-3 rounded-md lg:transition-all inline-block lg:hover:scale-90 ">
-                <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Flinktr.ee%2Falexandercomfort%3Futm_source%3Dlinktree_profile_share%26ltsid%3Df41c21af-fc50-4521-9a94-8f4f088fcfeb%26fbclid%3DIwZXh0bgNhZW0CMTAAAR1jZoEUfub2UwRBCrNfsAKlruLKWWuNkB99SY6UokFvuyxKFdoDwodGJSk_aem_1z5xpQW77wyTs184hGKEjg&h=AT1GVz_COQdBbxpc5hCN4Fx6AMQdLR0ozt1N8dmn0lFm1AkNbDJOpFD5iYFfY3xX5WzbixvoysVJzjzbm8_IEaoUNCzmVbb1LSjhMaZYQG9vFLUYbKxI4_sowzGs4xkoQv3xPg" className=" text-white uppercase font-semibold ">Learn More</a>
+                <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Flinktr.ee%2Falexandercomfort%3Futm_source%3Dlinktree_profile_share%26ltsid%3Df41c21af-fc50-4521-9a94-8f4f088fcfeb%26fbclid%3DIwZXh0bgNhZW0CMTAAAR1jZoEUfub2UwRBCrNfsAKlruLKWWuNkB99SY6UokFvuyxKFdoDwodGJSk_aem_1z5xpQW77wyTs184hGKEjg&h=AT1GVz_COQdBbxpc5hCN4Fx6AMQdLR0ozt1N8dmn0lFm1AkNbDJOpFD5iYFfY3xX5WzbixvoysVJzjzbm8_IEaoUNCzmVbb1LSjhMaZYQG9vFLUYbKxI4_sowzGs4xkoQv3xPg" className=" text-white uppercase font-semibold " target='_blank'>Learn More</a>
               </button>
             </div>
           </div>
@@ -73,7 +73,7 @@ function Home() {
             </p>
             <button className="bg-green-900 my-5 lg:hover:bg-blue-900 px-4 py-2">
               <a
-                href="https://web.facebook.com/profile.php?id=61556235412055"
+                href="https://web.facebook.com/profile.php?id=61556235412055" target='_blank'
                 className="text-white capitalize flex items-center justify-between gap-4"
               >
                 See more Events{" "}
@@ -119,7 +119,7 @@ function Home() {
             </p>
             <button className="bg-green-900 my-5 lg:hover:bg-blue-900 px-4 py-2">
               <a
-                href="/library"
+                href="/library" target='_blank'
                 className="text-white flex items-center justify-between capitalize gap-4"
               >
                 Go to resource library
@@ -167,12 +167,12 @@ function Home() {
             </p>
             <button className="bg-green-900 my-5 lg:hover:bg-blue-900 px-4 py-2">
               <a
-                href="https://www.facebook.com/profile.php?id=61556235412055&mibextid=ZbWKwL"
+                href="https://www.facebook.com/profile.php?id=61556235412055&mibextid=ZbWKwL" target='_blank'
                 className="text-white flex items-center justify-between gap-4"
               >
                 Follow Us On{" "}
                 <span>
-                <FaArrowCircleRight size={20} />
+                  <FaArrowCircleRight size={20} />
                 </span>{" "}
               </a>
             </button>
@@ -212,7 +212,7 @@ function Home() {
           today!!!
         </p>
 
-        <button className="bg-green-900 my-5 p-3">
+        <button disabled className="bg-green-900 my-5 p-3">
           <a
             href=""
             className="text-white flex items-center justify-between gap-4"
@@ -235,7 +235,7 @@ function Home() {
       <div >
         <Frequent />
       </div>
-      
+
     </>
   );
 }
