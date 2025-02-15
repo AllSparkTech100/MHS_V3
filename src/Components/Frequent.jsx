@@ -26,7 +26,7 @@ function Frequent() {
     ];
     return (
         <>
-            <div className="container h-auto p-6 mx-auto lg:my-40 my-20">
+            <div className="container h-auto p-6 mx-auto mt-28 lg:mt-52">
                 <div className="grid grid-col-1 lg:grid-cols-2 gap-5">
                     <div className="mt-4 mb-4">
                         <h4 className="font-medium text-2xl lg:text-6xl md:text-2xl capitalize">

@@ -69,6 +69,7 @@ function Book() {
           therapyQuestions: checked
             ? [...prev.therapyQuestions, value]
             : prev.therapyQuestions.filter((item) => item !== value),
+          // therapyPreferences.value
         }));
       }
     } else {
@@ -78,8 +79,17 @@ function Book() {
 
   const progress = (step / 3) * 100;
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+    // try {
+    //   console.log(formData);
+    //   alert("message sent")
+    // }
+    // catch (error) {
+    //   alert(error.new)
+    // }
+    // setFormData();
+
     // console.log(formData);
   }
 
@@ -239,7 +249,7 @@ function Book() {
               name="therapyPreferences"
               value={formData.therapyPreferences}
               onChange={handleChange}
-              className="w-full px-4 py-2 border rounded-md"
+              className="w-full px-4 py-2 border-2 border-black focus:border-orange-500 rounded-md"
             />
             {errors.therapyPreferences && (
               <p className="text-red-500 text-sm">{errors.therapyPreferences}</p>

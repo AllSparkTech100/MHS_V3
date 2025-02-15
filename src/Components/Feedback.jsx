@@ -80,7 +80,6 @@ function Feedback() {
             focus: "center",
             drag: "free",
             pagination: true,
-
             lazyLoading: "sequential",
           }}
         >

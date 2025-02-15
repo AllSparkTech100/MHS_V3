@@ -36,6 +36,7 @@ function Abuja() {
                     focus: "center",
                     interval: 2000,
                     pagination: false,
+                    lazyLoading: "sequential",
                     breakpoints: {
                         1024: { perPage: 2 },
                         640: { perPage: 1 },

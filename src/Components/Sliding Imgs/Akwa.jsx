@@ -25,6 +25,7 @@ function Akwa() {
                     interval: 2000,
                     pagination: false,
                     focus: "center",
+                    lazyLoading: "sequential",
                     breakpoints: {
                         1024: { perPage: 2 },
                         640: { perPage: 1 },

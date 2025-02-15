@@ -34,7 +34,7 @@ function Home() {
 
 
       {/* Description */}
-      <div className="flex mt-48 text-black flex-col md:flex-row lg:flex-row items-center justify-center gap-8 w-full h-auto px-8 py-12">
+      <div className="flex mt-20 lg:mt-40 text-black flex-col md:flex-row lg:flex-row items-center justify-center gap-8 w-full h-auto px-8 py-12">
         <div className="flex-1 my-8">
           <p className="font-normal text-justify">
             Mental Health and Saner Ltd is dedicated to promoting mental
@@ -59,7 +59,7 @@ function Home() {
       </div>
 
       {/* Events */}
-      <section className="mt-40 p-5">
+      <section className="mt-20 lg:mt-40 p-5">
         <div className="grid grid-cols-1 items-center gap-8 lg:grid-cols-3 md:grid-cols-2">
           <div className="my-5">
             <h3 className="text-left mb-4 md:mb-8 capitalize text-2xl font-bold">
@@ -104,7 +104,7 @@ function Home() {
       </section>
 
       {/* Resources */}
-      <section className="mt-40 p-5 lg:p-12">
+      <section className="mt-20 lg:mt-40 p-5 lg:p-12">
         <div className="grid grid-cols-1 items-center lg:flex-row-reverse gap-6 lg:grid-cols-3 md:grid-cols-2">
           <div className="my-5 lg:order-last">
             <h3 className="text-left mb-4 md:mb-8 capitalize text-2xl font-bold">
@@ -151,7 +151,7 @@ function Home() {
       </section>
 
       {/* Conversation */}
-      <section className="mt-40 p-5 lg:p-12">
+      <section className="mt-20 lg:mt-40 p-5 lg:p-12">
         <div className="grid grid-cols-1 items-center gap-6 lg:grid-cols-3 md:grid-cols-2">
           <div className="my-5">
             <h3 className="text-left mb-4 md:mb-8 capitalize text-2xl font-bold">

@@ -34,11 +34,11 @@ function Videos() {
                                         <CardContent className='p-3' >
                                             <Typography className='font-semibold' gutterBottom >
                                                 <h5 className="text-lg lg:text-2xl">
-                                                    ${items.title}
+                                                    {items.title}
                                                 </h5>
                                             </Typography>
                                             <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-                                                ${items.text}
+                                                {items.text}
                                             </Typography>
                                         </CardContent>
                                     </CardActionArea>

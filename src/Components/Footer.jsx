@@ -13,8 +13,8 @@ function Footer() {
   }, []);
   return (
     <>
-      <div className="h-42 p-10 md:p-8 lg:p-8  mt-60 bg-slate-950 ">
-        <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2">
+      <div className="h-42 p-10 md:p-8 lg:p-10  mt-60 bg-slate-950 ">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 md:grid-cols-2">
           <div className=" my-4">
             <h2 className="text-white text-lg lg:text-3xl font-bold uppercase">
               mental health <br /> plus &amp; saner limited
@@ -50,26 +50,30 @@ function Footer() {
             <h4 className="uppercase text-lg lg:text-3xl font-bold">
               open hours
             </h4>
-<ul className="d">
+            <ul className="list-none">
+              <li className="text-lg my-4 capitalize lg:text-xl">
+                mondays - saturday
+              </li>
+              <li className="text-lg my-4 capitalize lg:text-xl">
+                scheduled appointments
+              </li>
+              <li className="text-lg my-4 capitalize lg:text-xl">
+                online bookings
+              </li>
 
-</ul>
-            <p className="text-lg my-4 capitalize lg:text-xl">
-              mondays - saturday 
-            </p>
-            <p className="text-lg my-4 capitalize lg:text-xl">
-              scheduled appointments
-            </p>
-            <p className="text-lg my-4 capitalize lg:text-xl">
-              online bookings
-            </p>
+            </ul>
+
           </div>
-          <div>redere</div>
-          <div>redere</div>
+          <div>
+
+            
+          </div>
+         
         </div>
 
 
         <div className="flex flex-col md:flex-row lg:flex-row justify-between items-center">
-          <div className="flex-1/2 place-items-center text-center mt-10 md:place-items-start lg:place-items-start">
+          {/* <div className="flex-1/2 place-items-center text-center mt-10 md:place-items-start lg:place-items-start">
             <h3 className="text-2xl capitalize text-white">
               connect with us on social media
             </h3>
@@ -95,7 +99,7 @@ function Footer() {
                 </a>
               </div>
             </div>
-          </div>
+          </div> */}
           <div className="my-8 md:my-0 lg:my-0 text-center">
             <h5 className=" text-gray-400">
               &copy; {year} Mental Health Plus and Saner LTD

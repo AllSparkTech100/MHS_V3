@@ -61,9 +61,7 @@ export default function BasicTabs() {
         <Gallery />
       </Resources>
       <Resources value={value} index={2}>
-
         <SelarBooks />
-
       </Resources>
     </Box>
   );
