@@ -12,17 +12,17 @@ function Header() {
   };
   return (
     <>
-      <header className="sticky top-0 z-10 bg-[#e6e6e6] text-white">
-        <div className="flex gap-5 justify-between items-center p-4 lg:p-2">
+      <header className="sticky top-0 z-10 bg-white text-white">
+        <div className="flex gap-5 justify-between h-20 items-center p-4 lg:p-2">
 
           <img href='/' src="/mhslogo.webp" alt="Logo" className="w-15 h-10 lg:ml-4" />
 
           <div className="mx-auto text-black ">
             <nav
-              className="hidden sm:block basis-1/2 sm:text-lg text-xl"
+              className="hidden md:hidden lg:block sm:block basis-1/2 sm:text-lg text-xl"
               aria-label="main">
               {" "}
-              <ul className="flex items-center gap-5">
+              <ul className="flex uppercase font-medium items-center gap-5">
                 <li className=" lg:hover:text-black/50 lg:hover:transition-all"> <a href="/">Home</a></li>
                 <li className=" lg:hover:text-black/50 lg:hover:transition-all"><a href="/about">About Us</a></li>
                 <li className=" lg:hover:text-black/50 lg:hover:transition-all"><a href="/contact">Contact Us</a></li>
@@ -39,14 +39,14 @@ function Header() {
           <div className="flex items-center flex-row justify-center">
             <button
               onClick={menuToggle}
-              className="text-2xl text-black sm:hidden focus:outline-none"
+              className="text-2xl text-black md:block lg:hidden sm:hidden focus:outline-none"
             >
               {isMenu ? <IoClose size={28} /> : <IoMenuSharp size={28} />}
             </button>
           </div>
         </div>{" "}
         {isMenu && (
-          <div className="sm:hidden min-h-screen w-full text-white fill-transparent bg-emerald-950 transition-colors relative ease-linear duration-100">
+          <div className="sm:hidden md:block lg:hidden min-h-screen fixed w-full text-white fill-transparent bg-emerald-950 transition-colors  ease-linear duration-100">
             <div className="bg-slate-800 absolute z-10 transition-colors ease-linear duration-300 min-h-screen w-80 pt-5">
               <div className="text-white p-5">
                 <nav

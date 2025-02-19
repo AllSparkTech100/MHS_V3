@@ -212,7 +212,7 @@ function Home() {
           today!!!
         </p>
 
-        <button disabled className="bg-green-900 my-5 p-3">
+        <button className="disabled:opacity-40 bg-green-900 my-5 p-3">
           <a
             href=""
             className="text-white flex items-center justify-between gap-4"
