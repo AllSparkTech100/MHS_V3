@@ -21,7 +21,7 @@ function About() {
       </div>
 
       <div className="my-20 container mx-auto p-5 text-center">
-        <p className="mt-2 mb-7 text-black text-justify md:text-center lg:text-center">
+        <p className="mt-2 mb-7 text-black md:text-center lg:text-center">
           Mental Health Plus and Saner Limited is a registered brand with
           the Nigerian corporate affairs commission with Registration No.:
           <span className="text-blue-700 font-bold italic"> 7137614</span>{" "}
@@ -154,7 +154,7 @@ function About() {
                 </div>
               </div>
               <hr className="border-2 rounded-lg border-slate-900" />
-              <div className="mt-8 text-justify">
+              <div className="mt-8 ">
                 <p className="mt-4">
                   She is a practicing counseling psychologist specializing in
                   Clinical and Mental Health Counseling. With a strong

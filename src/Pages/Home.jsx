@@ -36,7 +36,7 @@ function Home() {
       {/* Description */}
       <div className="flex mt-20 lg:mt-40 text-black flex-col md:flex-row lg:flex-row items-center justify-center gap-8 w-full h-auto px-8 py-12">
         <div className="flex-1 my-8">
-          <p className="font-normal text-justify">
+          <p className="font-normal">
             Mental Health and Saner Ltd is dedicated to promoting mental
             wellness and providing comprehensive support services for
             individuals and organizations. We specialize in counseling, therapy,
