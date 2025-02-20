@@ -18,7 +18,7 @@ function Home() {
 
       <div className="relative h-96 lg:h-screen">
         <div className="absolute bg-no-repeat inset-0 bg-[url('/calm.jpg')] bg-cover bg-center before:absolute before:inset-0 before:bg-gradient-to-b before:from-black/50 before:to-black/55">
-          <div className="relative p-5 container mx-auto my-20 lg:my-56">
+          <div data-aos="fade-down" className="relative p-5 container mx-auto my-20 lg:my-56">
             <h1 className="uppercase text-3xl md:text-5xl lg:text-7xl font-bold text-white"> mental health, <br />is preserved wealth</h1>
             <div className="flex items-center mt-3 gap-5">
               <button className="bg-green-600 px-6 py-3 rounded-md lg:transition-all inline-block lg:hover:scale-90 ">
@@ -35,7 +35,7 @@ function Home() {
 
       {/* Description */}
       <div className="flex mt-20 lg:mt-40 text-black flex-col md:flex-row lg:flex-row items-center justify-center gap-8 w-full h-auto px-8 py-12">
-        <div className="flex-1 my-8">
+        <div data-aos="fade-up" className="flex-1 my-8">
           <p className="font-normal">
             Mental Health and Saner Ltd is dedicated to promoting mental
             wellness and providing comprehensive support services for
@@ -44,7 +44,7 @@ function Home() {
             more balanced lives.
           </p>
         </div>
-        <div className="h-82 w-full aspect-video mb-5 md:w-80 mt-8 flex-1 overflow-hidden">
+        <div data-aos="fade-down" className="h-82 w-full aspect-video mb-5 md:w-80 mt-8 flex-1 overflow-hidden">
           <iframe
             width="100%"
             height="315"
@@ -61,7 +61,7 @@ function Home() {
       {/* Events */}
       <section className="mt-20 lg:mt-40 p-5">
         <div className="grid grid-cols-1 items-center gap-8 lg:grid-cols-3 md:grid-cols-2">
-          <div className="my-5">
+          <div data-aos="fade-up" className="my-5">
             <h3 className="text-left mb-4 md:mb-8 capitalize text-2xl font-bold">
               engaging events
             </h3>
@@ -83,7 +83,7 @@ function Home() {
               </a>
             </button>
           </div>
-          <div className="lg:h-96 order-first lg:order-none md:order-none">
+          <div data-aos="fade-down" className="lg:h-96 order-first lg:order-none md:order-none">
             {" "}
             <img
               src={counsel}
@@ -92,7 +92,7 @@ function Home() {
               className="my-5 lg:my-0 aspect-video lg:aspect-auto object-cover h-full w-full rounded-md"
             />
           </div>
-          <div className="hidden lg:h-96 lg:block md:hidden">
+          <div data-aos="fade-up" className="hidden lg:h-96 lg:block md:hidden">
             <img
               src={doc_img}
               alt="Doctors Image"
@@ -106,7 +106,7 @@ function Home() {
       {/* Resources */}
       <section className="mt-20 lg:mt-40 p-5 lg:p-12">
         <div className="grid grid-cols-1 items-center lg:flex-row-reverse gap-6 lg:grid-cols-3 md:grid-cols-2">
-          <div className="my-5 lg:order-last">
+          <div data-aos="fade-down" className="my-5 lg:order-last">
             <h3 className="text-left mb-4 md:mb-8 capitalize text-2xl font-bold">
               highlighted resources
             </h3>
@@ -130,7 +130,7 @@ function Home() {
             </button>
           </div>
 
-          <div className="order-first lg:order-none md:order-first">
+          <div data-aos="fade-up" className="order-first lg:order-none md:order-first">
             {" "}
             <img
               src={child_counsel}
@@ -139,7 +139,7 @@ function Home() {
               className="my-5 object-cover h-full w-full rounded-md"
             />
           </div>
-          <div className="hidden lg:block md:hidden">
+          <div data-aos="fade-down" className="hidden lg:block md:hidden">
             <img
               src={therapist_img}
               alt="Therapist Image"
@@ -153,7 +153,7 @@ function Home() {
       {/* Conversation */}
       <section className="mt-20 lg:mt-40 p-5 lg:p-12">
         <div className="grid grid-cols-1 items-center gap-6 lg:grid-cols-3 md:grid-cols-2">
-          <div className="my-5">
+          <div data-aos="fade-down" className="my-5">
             <h3 className="text-left mb-4 md:mb-8 capitalize text-2xl font-bold">
               join the conversation
             </h3>
@@ -178,7 +178,7 @@ function Home() {
             </button>
           </div>
 
-          <div className="h-80 order-first md:order-none lg:order-none">
+          <div data-aos="fade-up" className="h-80 order-first md:order-none lg:order-none">
             {" "}
             <img
               src={converse}
@@ -187,7 +187,7 @@ function Home() {
               className="my-5 object-cover h-full w-full rounded-md"
             />
           </div>
-          <div className="h-96 hidden lg:block md:hidden">
+          <div data-aos="fade-down" className="h-96 hidden lg:block md:hidden">
             <img
               src={convert}
               alt="counselling discussion Image"

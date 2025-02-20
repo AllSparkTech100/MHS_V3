@@ -44,7 +44,7 @@ function PHC() {
                             <img
                                 src={image.src}
                                 alt='Portharcourt Therapy'
-                                className="w-full h-64 lg:h-80  object-cover bg-top" loading="lazy"
+                                className="w-full h-64 lg:h-80  object-cover" loading="lazy"
                             />
                         </div>
                     </SplideSlide>
