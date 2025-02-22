@@ -153,7 +153,7 @@ function Home() {
       {/* Conversation */}
       <section className="mt-20 lg:mt-40 p-5 lg:p-12">
         <div className="grid grid-cols-1 items-center gap-6 lg:grid-cols-3 md:grid-cols-2">
-          <div data-aos="fade-down" className="my-5">
+          <div data-aos="zoom-in" className="my-5">
             <h3 className="text-left mb-4 md:mb-8 capitalize text-2xl font-bold">
               join the conversation
             </h3>
@@ -200,10 +200,10 @@ function Home() {
 
       {/* Donation */}
       <div className="container-full bg-gray-800 items-center justify-center text-white  mt-32 p-4 text-center flex flex-col gap-6 lg:p-24">
-        <h3 className="text-left mt-12 mb-3 md:mb-8 capitalize text-2xl font-bold lg:text-4xl">
+        <h3 data-aos="fade-up" className="text-left mt-12 mb-3 md:mb-8 capitalize text-2xl font-bold lg:text-4xl">
           Donate
         </h3>
-        <p className="my-2 md:my-1 text-center">
+        <p data-aos="fade-down" className="my-2 md:my-1 text-center">
           Your generousity can help us continue our mission of empowering
           individuals and communities through mental health education and
           support. every contribution , no matter the size, makes a meaningful
@@ -212,7 +212,7 @@ function Home() {
           today!!!
         </p>
 
-        <button className="disabled:opacity-40 bg-green-900 my-5 p-3">
+        <button data-aos="fade-up" className="disabled:opacity-40 bg-green-900 my-5 p-3">
           <a
             href=""
             className="text-white flex items-center justify-between gap-4"

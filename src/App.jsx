@@ -14,11 +14,13 @@ function App() {
 
   useEffect(() => {
     AOS.init({
-      duration: 200,
-      easing: "ease",
+      duration: 1000,
+      easing: "ease-in-out",
       once: false,
-      startEvent: "DOMContentLoaded",
+      delay: 50,
+      offset: 200,
     });
+    AOS.refresh()
   });
 
 
