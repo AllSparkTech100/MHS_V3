@@ -14,10 +14,10 @@ function App() {
 
   useEffect(() => {
     AOS.init({
-      duration: 1000,
+      duration: 1500,
       easing: "ease-in-out",
       once: false,
-      delay: 50,
+      delay: 100,
       offset: 200,
     });
     // AOS.refresh()

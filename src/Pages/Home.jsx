@@ -226,7 +226,7 @@ function Home() {
       </div>
 
       <section className="mt-40 lg:mt-72">
-        <h3 className="text-center text-2xl mb-16 font-bold capitalize underline decoration-slate-500">
+        <h3 data-aos="fade-up" className="text-center text-2xl mb-16 font-bold capitalize underline decoration-slate-500">
           what people say about us
         </h3>
         <Feedback />

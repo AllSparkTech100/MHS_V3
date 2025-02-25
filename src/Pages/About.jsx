@@ -12,7 +12,7 @@ function About() {
         <div className="absolute bg-no-repeat inset-0 bg-[url('/akw/ak4.webp')] bg-cover bg-bottom lg:bg-[center_top_-10rem] before:absolute before:inset-0 before:bg-gradient-to-b before:from-black/50 before:to-black/55">
           <div className="relative p-5 mx-auto my-28 md:my-56 lg:my-48 ">
             <div className="flex-col justify-center items-center flex text-white gap-8 place-items-center">
-              <h1 className=" uppercase text-center text-2xl md:text-5xl lg:text-7xl font-bold">
+              <h1  data-aos="fade-up" className=" uppercase text-center text-2xl md:text-5xl lg:text-7xl font-bold">
                 About Us
               </h1>
             </div>
@@ -20,7 +20,7 @@ function About() {
         </div>
       </div>
 
-      <div className="my-20 container mx-auto p-5 text-center">
+      <div  data-aos="zoom-in" className="my-20 container mx-auto p-5 text-center">
         <p className="mt-2 mb-7 text-black md:text-center lg:text-center">
           Mental Health Plus and Saner Limited is a registered brand with
           the Nigerian corporate affairs commission with Registration No.:
@@ -36,7 +36,7 @@ function About() {
       </div>
       {/* Mission and Vision Statement */}
       <section className="flex flex-col lg:flex-row place-items-center  w-full mx-auto h-auto mt-20 justify-evenly-center p-5 gap-4">
-        <div className="rounded-lg border bg-[#02514b] p-9 h-auto lg:h-72 w-full lg:w-1/2">
+        <div  data-aos="fade-up" className="rounded-lg border bg-[#02514b] p-9 h-auto lg:h-72 w-full lg:w-1/2">
           <h3 className="capitalize text-2xl font-bold underline text-yellow-500 underline-offset-4">
             our mission
           </h3>
@@ -47,7 +47,7 @@ function About() {
             prevent triggers and cultivate a wholistic wellbeing.
           </p>
         </div>
-        <div className="rounded-lg bg-[#02514b] p-9 h-auto lg:h-72 w-full lg:w-1/2">
+        <div  data-aos="fade-up" className="rounded-lg bg-[#02514b] p-9 h-auto lg:h-72 w-full lg:w-1/2">
           <h3 className="capitalize text-2xl font-bold underline text-yellow-500 underline-offset-4">
             Our Vision & Core Values
           </h3>
@@ -65,10 +65,10 @@ function About() {
 
 
       {/* information */}
-      <div className="container mt-28 mx-auto p-4 h-auto">
+      <div  className="container mt-28 mx-auto p-4 h-auto">
         <div className="grid grid-cols-1 gap-4 lg:grid-cols-4 md:grid-cols-2">
           {/* items */}
-          <div className=" place-items-center h-full p-4 w-full text-center">
+          <div  data-aos="fade-up" className=" place-items-center h-full p-4 w-full text-center">
             <FaRegCircle className="my-3" size={35} />
             <div>
               <h4 className="font-semibold  capitalize text-lg">
@@ -79,7 +79,7 @@ function About() {
               </p>
             </div>
           </div>
-          <div className="place-items-center h-ful p-4 w-full text-center">
+          <div  data-aos="fade-down" className="place-items-center h-ful p-4 w-full text-center">
             <FaSearch className="my-3" size={35} />
             <div>
               <h4 className="font-semibold capitalize text-lg">
@@ -90,7 +90,7 @@ function About() {
               </p>
             </div>
           </div>
-          <div className=" place-items-center h-full p-4 w-full text-center">
+          <div  data-aos="fade-up" className=" place-items-center h-full p-4 w-full text-center">
             <FaUserFriends className="my-3" size={35} />
             <div>
               <h4 className="font-semibold  capitalize text-lg">
@@ -101,7 +101,7 @@ function About() {
               </p>
             </div>
           </div>
-          <div className=" place-items-center h-full p-4 w-full text-center">
+          <div  data-aos="fade-down" className=" place-items-center h-full p-4 w-full text-center">
             <BsChatSquareDotsFill className="my-3" size={35} />
             <div>
               <h4 className="font-semibold  capitalize text-lg">
@@ -119,15 +119,14 @@ function About() {
       {/* Description of the CEO */}
       <section className="mt-40">
         <div className="container w-full mx-auto p-4 rounded-lg">
-
           <div className="text-center my-10 font-bold">
-            <h4 className="uppercase text-xl lg:text-2xl">
+            <h4  data-aos="fade-up" className="uppercase text-xl lg:text-2xl">
               get to know our ceo
             </h4>
           </div>
           <div className="h-auto relative  rounded-2xl flex flex-col lg:flex-row-reverse gap-3 lg:gap-6 w-full py-10 px-4 items-center justify-around ">
             {/* CEO img */}
-            <div className="">
+            <div  data-aos="fade-up" className="">
               <div className="flex-1 lg:flex-auto h-72 lg:h-80 lg:max-w-64 overflow-hidden rounded-lg">
                 <img
                   src={dir_img}
@@ -144,7 +143,7 @@ function About() {
             </div>
 
             {/* CEO description */}
-            <div className=" mt-8 flex-1 lg:w-full lg:m-0 text-black">
+            <div  data-aos="fade-down" className=" mt-8 flex-1 lg:w-full lg:m-0 text-black">
               <div className="text-center">
                 <h3 className="font-bold text-lg lg:text-2xl uppercase">
                   Alexander comfort
