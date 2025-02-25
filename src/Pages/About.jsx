@@ -68,7 +68,7 @@ function About() {
       <div  className="container mt-28 mx-auto p-4 h-auto">
         <div className="grid grid-cols-1 gap-4 lg:grid-cols-4 md:grid-cols-2">
           {/* items */}
-          <div  data-aos="fade-up" className=" place-items-center h-full p-4 w-full text-center">
+          <div  data-aos="fade-up" data-aos-duration="400" className=" place-items-center h-full p-4 w-full text-center">
             <FaRegCircle className="my-3" size={35} />
             <div>
               <h4 className="font-semibold  capitalize text-lg">
@@ -79,7 +79,7 @@ function About() {
               </p>
             </div>
           </div>
-          <div  data-aos="fade-down" className="place-items-center h-ful p-4 w-full text-center">
+          <div  data-aos="fade-up" data-aos-duration="500" className="place-items-center h-ful p-4 w-full text-center">
             <FaSearch className="my-3" size={35} />
             <div>
               <h4 className="font-semibold capitalize text-lg">
@@ -90,18 +90,18 @@ function About() {
               </p>
             </div>
           </div>
-          <div  data-aos="fade-up" className=" place-items-center h-full p-4 w-full text-center">
+          <div  data-aos="fade-up" data-aos-duration="600" className=" place-items-center h-full p-4 w-full text-center">
             <FaUserFriends className="my-3" size={35} />
             <div>
               <h4 className="font-semibold  capitalize text-lg">
-                Choose your Therapist
+              Book a session
               </h4>
               <p className="my-5">
                 Schedule  appointments with a therapist who resonates with you and engage fully in tailored sessions designed for your personal growth and recovery.
               </p>
             </div>
           </div>
-          <div  data-aos="fade-down" className=" place-items-center h-full p-4 w-full text-center">
+          <div  data-aos="fade-up" data-aos-duration="700" className=" place-items-center h-full p-4 w-full text-center">
             <BsChatSquareDotsFill className="my-3" size={35} />
             <div>
               <h4 className="font-semibold  capitalize text-lg">
@@ -117,7 +117,7 @@ function About() {
       </div>
 
       {/* Description of the CEO */}
-      <section className="mt-40">
+      <section className="mt-40"> 
         <div className="container w-full mx-auto p-4 rounded-lg">
           <div className="text-center my-10 font-bold">
             <h4  data-aos="fade-up" className="uppercase text-xl lg:text-2xl">
