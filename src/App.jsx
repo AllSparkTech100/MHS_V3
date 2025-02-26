@@ -1,8 +1,6 @@
 import Header from "./Components/Header";
 import Pages from "./Pages/Pages";
 import Footer from "./Components/Footer";
-// import Preloader from './Components/Preloader'
-// import { motion } from 'framer-motion';
 import { useEffect } from 'react';
 import { Analytics } from "@vercel/analytics/react"
 import AOS from 'aos';
@@ -11,7 +9,6 @@ AOS.init();
 
 
 function App() {
-  // const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     AOS.init({
@@ -24,18 +21,8 @@ function App() {
     // AOS.refresh()
   });
 
-  // useEffect(() => {
-  //   const timeout = setTimeout(() => {
-  //     setIsLoading(false);
-  //   }, 4000); // Adjust timing as needed (matches animation duration)
-
-  //   return () => clearTimeout(timeout);
-  // }, []);
-
-
   return (
     <>
-
       <Header />
       <Pages />
       <Footer />
