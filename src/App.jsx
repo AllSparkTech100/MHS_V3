@@ -18,7 +18,7 @@ function App() {
       delay: 100,
       offset: 200,
     });
-    // AOS.refresh()
+    AOS.refresh()
   });
 
   return (
