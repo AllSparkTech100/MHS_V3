@@ -3,9 +3,6 @@ import { motion } from "framer-motion";
 import { IoClose } from "react-icons/io5";
 
 export default function ModalPopup() {
-    // const [isOpen, setIsOpen] = useState(()=>{
-    //     return sessionStorage.getItem("modalShown") ? false : true;
-    // });
     const [isOpen, setIsOpen] = useState(false)
     const eventDate = new Date("2025-05-10T23:59:59").getTime();
     const [timeLeft, setTimeLeft] = useState(eventDate - new Date().getTime());
@@ -44,7 +41,7 @@ export default function ModalPopup() {
                     className="bg-white h-auto p-3 rounded-2xl shadow-lg max-w-sm w-full relative"
                 >
                     <button
-                        onClick={() => setIsOpen(false)}
+                        onClick={closeModal}
                         className="absolute top-3 right-3 text-gray-600 focus:outline-none hover:text-gray-900"
                     >
                         <IoClose size={30} />

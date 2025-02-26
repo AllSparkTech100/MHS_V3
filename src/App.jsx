@@ -11,6 +11,7 @@ AOS.init();
 
 
 function App() {
+  // const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     AOS.init({
@@ -23,13 +24,23 @@ function App() {
     // AOS.refresh()
   });
 
+  // useEffect(() => {
+  //   const timeout = setTimeout(() => {
+  //     setIsLoading(false);
+  //   }, 4000); // Adjust timing as needed (matches animation duration)
+
+  //   return () => clearTimeout(timeout);
+  // }, []);
+
 
   return (
     <>
+
       <Header />
       <Pages />
       <Footer />
       <Analytics />
+
     </>
   );
 }
