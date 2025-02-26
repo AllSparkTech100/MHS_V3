@@ -9,6 +9,7 @@ import {
 import { FaArrowCircleRight, FaDonate } from "react-icons/fa";
 import Feedback from "../Components/Feedback";
 import Frequent from "../Components/Frequent";
+import ModalPopup from "../Components/Modal";
 
 
 function Home() {
@@ -33,6 +34,7 @@ function Home() {
       </div>
 
 
+
       {/* Description */}
       <div className="flex mt-20 lg:mt-40 text-black flex-col md:flex-row lg:flex-row items-center justify-center gap-8 w-full h-auto px-8 py-12">
         <div data-aos="fade-up" className="flex-1 my-8">
@@ -53,7 +55,7 @@ function Home() {
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerPolicy="strict-origin-when-cross-origin"
-            allowfullscreen
+            allowFullScreen
           ></iframe>
         </div>
       </div>
@@ -236,6 +238,9 @@ function Home() {
         <Frequent />
       </div>
 
+      <div>
+        <ModalPopup />
+      </div>
     </>
   );
 }

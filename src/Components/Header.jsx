@@ -46,9 +46,9 @@ function Header() {
           </div>
         </div>{" "}
         {isMenu && (
-          <div className="sm:hidden md:block lg:hidden min-h-screen fixed w-full text-white fill-transparent bg-emerald-950 transition-colors  ease-linear duration-100">
+          <div className="sm:hidden md:block lg:hidden min-h-screen fixed w-full text-white fill-transparent bg-emerald-950 transition-colors ease-linear duration-100">
             <div className="bg-slate-800 absolute z-10 transition-colors ease-linear duration-300 min-h-screen w-80 pt-5">
-              <div className="text-white p-5">
+              <div className=" text-white p-5">
                 <nav
                   className="uppercase  text-xl">
                   {" "}
@@ -59,7 +59,7 @@ function Header() {
                     <li className=""><a href="/services">Our Services</a></li>
                     <li className=""> <a href="/library"> Library</a></li>
                   </ul>
-                  <button className="mt-3 text-left text-white bg-[#02514b] rounded-lg w-full p-3 place-items-center">
+                  <button className="mt-3 text-left text-black bg-white rounded-lg w-full p-3 place-items-center">
                     <a href="http://">Book a Session</a>
                   </button>
                 </nav>

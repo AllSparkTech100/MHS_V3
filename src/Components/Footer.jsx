@@ -13,7 +13,7 @@ function Footer() {
   }, []);
   return (
     <>
-      <div className="h-96 p-10 md:p-8 lg:p-10 mt-60 bg-slate-950 ">
+      <div className="h-full p-10 md:p-8 lg:p-10 mt-60 bg-slate-950 ">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 md:grid-cols-2">
           <div className=" my-4">
             <h2 className="text-white text-lg lg:text-3xl font-bold uppercase">
@@ -73,37 +73,14 @@ function Footer() {
 
 
         <div className="flex flex-col md:flex-row lg:flex-row justify-between items-center">
-          {/* <div className="flex-1/2 place-items-center text-center mt-10 md:place-items-start lg:place-items-start">
-            <h3 className="text-2xl capitalize text-white">
-              connect with us on social media
-            </h3>
-            <div className="flex mt-3 items-center gap-5">
-              <div className="rounded-full lg:h-10 lg:w-10 h-8 w-8 flex items-center justify-center p-2 md:p-4 lg:p-4 bg-gray-200 lg:hover:bg-slate-800 lg:hover:text-yellow-500">
-                <a href="https://www.facebook.com/profile.php?id=61556235412055&mibextid=ZbWKwL" target="_blank" className=''>
-                  <FaFacebook size={20} />
-                </a>
-              </div>
-              <div className="rounded-full lg:h-10 lg:w-10 h-8 w-8 flex items-center justify-center p-2 md:p-4 lg:p-4 bg-gray-200 lg:hover:bg-slate-800 lg:hover:text-yellow-500">
-                <a href="https://ng.linkedin.com/in/alexandercomfort?trk=public_post_feed-actor-name" target="_blank" className=''>
-                  <FaLinkedinIn size={20} />
-                </a>
-              </div>
-              <div className="rounded-full lg:h-10 lg:w-10 h-8 w-8 flex items-center justify-center p-2 md:p-4 lg:p-4 bg-gray-200 lg:hover:bg-slate-800 lg:hover:text-yellow-500">
-                <a href="https://linktr.ee/alexandercomfort?fbclid=IwY2xjawGXHzRleHRuA2FlbQIxMAABHXZcpw-IWCNMDL5ZHdvdoEhPvKHae8LuTVyvOJItmXfR7RKVt7CinYZwkQ_aem_rxzbBEAA7gl_r03ZfQvW9g" target="_blank" className=''>
-                  <PiLinktreeLogoBold size={20} />
-                </a>
-              </div>
-              <div className="rounded-full lg:h-10 lg:w-10 h-8 w-8 flex items-center justify-center p-2 md:p-4 lg:p-4 bg-gray-200 lg:hover:bg-slate-800 lg:hover:text-yellow-500">
-                <a href="https://www.instagram.com/cognitherapist/" target="_blank" className=''>
-                  <FaInstagram size={20} />
-                </a>
-              </div>
-            </div>
-          </div> */}
-          <div className="my-8 md:my-0 lg:my-0 text-center">
+
+          <div className="my-8 md:my-0 lg:my-5 text-center">
             <h5 className=" text-gray-400">
               &copy; {year} Mental Health Plus and Saner LTD
             </h5>
+          </div>
+          <div>
+            <span className="text-white">Designed with ❤ by Eikasia (AllSpark) Technologies  </span>
           </div>
         </div>
 
