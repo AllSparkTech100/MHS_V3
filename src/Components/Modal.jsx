@@ -3,7 +3,10 @@ import { motion } from "framer-motion";
 import { IoClose } from "react-icons/io5";
 
 export default function ModalPopup() {
-    const [isOpen, setIsOpen] = useState(false);
+    // const [isOpen, setIsOpen] = useState(()=>{
+    //     return sessionStorage.getItem("modalShown") ? false : true;
+    // });
+    const [isOpen, setIsOpen] = useState(false)
     const eventDate = new Date("2025-05-10T23:59:59").getTime();
     const [timeLeft, setTimeLeft] = useState(eventDate - new Date().getTime());
     useEffect(() => {
@@ -21,17 +24,15 @@ export default function ModalPopup() {
         return `${days} Days : ${hours} Hrs : ${minutes} Min : ${seconds} Sec`;
     };
     useEffect(() => {
-        const timer = setTimeout(() => setIsOpen(true), 500);
-        if (isOpen) {
-            document.body.classList.add("overflow-hidden");
-        } else {
-            document.body.remove.classList("överflow-hidden")
+        const hasSeenModal = sessionStorage.getItem("hasSeenModal");
+        if (!hasSeenModal) {
+            setIsOpen(true);
         }
-        return () => {
-            clearTimeout(timer);
-            document.body.classList.remove("overflow-hidden");
-          };
-    }, [isOpen]);
+    }, []);
+    const closeModal = () => {
+        setIsOpen(false);
+        sessionStorage.setItem("hasSeenModal", "true");
+    };
 
     return (
         isOpen && (
@@ -44,7 +45,7 @@ export default function ModalPopup() {
                 >
                     <button
                         onClick={() => setIsOpen(false)}
-                        className="absolute top-3 right-3 text-gray-600 hover:text-gray-900"
+                        className="absolute top-3 right-3 text-gray-600 focus:outline-none hover:text-gray-900"
                     >
                         <IoClose size={30} />
                     </button>
@@ -58,7 +59,7 @@ export default function ModalPopup() {
                     <div className="p-3">
                         <p className="text-gray-700 mb-4">{formatTime(timeLeft)}</p>
                         <h2 className="text-xl uppercase font-semibold mb-4"> port-harcourt sane conference 2.0</h2>
-                        <button className="mx-auto flex items-center text-center gap-2 bg-blue-500 text-white-900 px-4 py-2 rounded-lg font-semibold">
+                        <button className="mx-auto flex items-center text-center gap-2 bg-green-900 text-white px-4 py-2 rounded-lg font-semibold">
                             <a href="https://forms.gle/NUfgdDNu23USV6FW8" rel="noopener noreferrer" target="_blank">
                                 Register Now
                             </a>

@@ -15,7 +15,7 @@ function Header() {
     if (isMenu) {
       document.body.classList.add("overflow-hidden");
     } else {
-      document.body.remove.classList("overflow-hidden")
+      document.body.classList.remove("overflow-hidden")
     }
     return () => {
       document.body.classList.remove("overflow-hidden")
