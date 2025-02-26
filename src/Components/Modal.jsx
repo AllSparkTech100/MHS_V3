@@ -25,11 +25,11 @@ export default function ModalPopup() {
         if (isOpen) {
             document.body.classList.add("overflow-hidden");
         } else {
-            document.remove.classList("överflow-hidden")
+            document.body.remove.classList("överflow-hidden")
         }
         return () => {
             clearTimeout(timer);
-            document.body.classList.remove("overflow-hidden"); // Clean up on unmount
+            document.body.classList.remove("overflow-hidden");
           };
     }, [isOpen]);
 

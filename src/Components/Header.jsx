@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { IoClose, IoMenuSharp } from "react-icons/io5";
 import Register from './Register';
 
@@ -10,6 +10,17 @@ function Header() {
   const menuToggle = () => {
     setIsMenu(!isMenu);
   };
+
+  useEffect(() => {
+    if (isMenu) {
+      document.body.classList.add("overflow-hidden");
+    } else {
+      document.body.remove.classList("overflow-hidden")
+    }
+    return () => {
+      document.body.classList.remove("overflow-hidden")
+    }
+  }, [isMenu])
   return (
     <>
       <header className="sticky top-0 z-10 bg-white text-white">
