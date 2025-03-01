@@ -1,4 +1,6 @@
-import { FaFacebook, FaLinkedinIn, FaInstagram } from "react-icons/fa";
+import { FaFacebook, FaLocationArrow, FaLinkedinIn, FaInstagram, FaMailBulk } from "react-icons/fa";
+// import { IoIosChatbubbles } from "react-icons/io";
+import { IoCall } from "react-icons/io5";
 import { PiLinktreeLogoBold } from "react-icons/pi";
 import { useState, useEffect } from "react";
 
@@ -13,10 +15,10 @@ function Footer() {
   }, []);
   return (
     <>
-      <div className="h-full p-10 md:p-8 lg:p-10 mt-60 bg-slate-950 ">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 md:grid-cols-2">
+      <div className="h-full p-10 md:p-8 lg:p-12 mt-60 bg-slate-950 ">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 lg:gap-5 md:grid-cols-2">
           <div className=" my-4">
-            <h2 className="text-white text-lg lg:text-3xl font-bold uppercase">
+            <h2 className="text-white text-lg lg:text-2xl font-medium uppercase">
               mental health <br /> plus &amp; saner limited
             </h2>
             <p className="mt-2 mb-3 text-white text-lg sentence">
@@ -47,7 +49,7 @@ function Footer() {
           </div>
           {/*  */}
           <div className="my-4 text-white">
-            <h4 className="uppercase text-lg lg:text-3xl font-bold">
+            <h4 className="uppercase text-lg lg:text-2xl  font-medium">
               open hours
             </h4>
             <ul className="list-none">
@@ -64,23 +66,61 @@ function Footer() {
             </ul>
 
           </div>
-          <div>
-
+          {/* links */}
+          <div className="my-4 text-white">
+            <h4 className="uppercase text-lg lg:text-2xl  font-medium">
+              quick links
+            </h4>
+            <ul className="list-none capitalize">
+              <li className="text-lg my-4  lg:text-xl">
+                <a href="/">home</a>
+              </li>
+              <li className="text-lg my-4 lg:text-xl">
+                <a href="/about">about us</a>
+              </li>
+              <li className="text-lg my-4 lg:text-xl">
+                <a href="/contact">contact us</a>
+              </li>
+              <li className="text-lg my-4 lg:text-xl">
+                <a href="/services">our services</a>
+              </li>
+              <li className="text-lg my-4 lg:text-xl">
+                <a href="/library">library</a>
+              </li>
+            </ul>
 
           </div>
+          {/* contact */}
+          <div className="my-4 text-white">
+            <h4 className="uppercase text-lg lg:text-2xl  font-medium">
+              contact details
+            </h4>
+            <ul className="list-none ">
+              <li className="text-lg my-4 capitalize flex items-center gap-2 lg:text-xl">
+                <FaLocationArrow size={20} /><span>port-harcourt, nigeria</span>
+              </li>
+              <li className="text-lg  flex items-center gap-2  my-4 lg:text-xl">
+                <FaMailBulk size={20} /> &nbsp;<a href="mailto:mentalhealthplus24@gmail.com">mentalhealthplus24@gmail.com</a>
+              </li>
+              <li className="text-lg flex items-center gap-2  my-4 lg:text-xl">
+                <IoCall size={20} /><a href="tel:+2348149944531"> +2348149944531</a>
+              </li>
 
+            </ul>
+
+          </div>
         </div>
 
 
+        <hr className="my-4" />
         <div className="flex flex-col md:flex-row lg:flex-row justify-between items-center">
-
           <div className="my-8 md:my-0 lg:my-5 text-center">
             <h5 className=" text-gray-400">
               &copy; {year} Mental Health Plus and Saner LTD
             </h5>
           </div>
-          <div>
-            <span className="text-white">Designed with ❤ by Eikasia (AllSpark) Technologies  </span>
+          <div className='text-center '>
+            <span className="text-white ">Designed with ❤ by Eikasia (AllSpark) Technologies  </span>
           </div>
         </div>
 
