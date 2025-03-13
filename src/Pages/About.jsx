@@ -12,7 +12,7 @@ function About() {
         <div className="absolute bg-no-repeat inset-0 bg-[url('/akw/ak4.webp')] bg-cover bg-bottom lg:bg-[center_top_-10rem] before:absolute before:inset-0 before:bg-gradient-to-b before:from-black/50 before:to-black/55">
           <div className="relative p-5 mx-auto my-28 md:my-56 lg:my-48 ">
             <div className="flex-col justify-center items-center flex text-white gap-8 place-items-center">
-              <h1  data-aos="fade-up" className=" uppercase text-center text-2xl md:text-5xl lg:text-7xl font-bold">
+              <h1 data-aos="fade-up" className=" uppercase text-center text-2xl md:text-5xl lg:text-7xl font-bold">
                 About Us
               </h1>
             </div>
@@ -20,7 +20,7 @@ function About() {
         </div>
       </div>
 
-      <div  data-aos="zoom-in" className="my-20 container mx-auto p-5 text-center">
+      <div data-aos="zoom-in" className="my-20 container mx-auto p-5 text-center">
         <p className="mt-2 mb-7 text-black md:text-center lg:text-center">
           Mental Health Plus and Saner Limited is a registered brand with
           the Nigerian corporate affairs commission with Registration No.:
@@ -36,7 +36,7 @@ function About() {
       </div>
       {/* Mission and Vision Statement */}
       <section className="flex flex-col lg:flex-row place-items-center  w-full mx-auto h-auto mt-20 justify-evenly-center p-5 gap-4">
-        <div  data-aos="fade-up" className="rounded-lg border bg-[#02514b] p-9 h-auto lg:h-72 w-full lg:w-1/2">
+        <div data-aos="fade-up" className="rounded-lg border bg-[#02514b] p-9 h-auto lg:h-72 w-full lg:w-1/2">
           <h3 className="capitalize text-2xl font-bold underline text-yellow-500 underline-offset-4">
             our mission
           </h3>
@@ -47,7 +47,7 @@ function About() {
             prevent triggers and cultivate a wholistic wellbeing.
           </p>
         </div>
-        <div  data-aos="fade-up" className="rounded-lg bg-[#02514b] p-9 h-auto lg:h-72 w-full lg:w-1/2">
+        <div data-aos="fade-up" className="rounded-lg bg-[#02514b] p-9 h-auto lg:h-72 w-full lg:w-1/2">
           <h3 className="capitalize text-2xl font-bold underline text-yellow-500 underline-offset-4">
             Our Vision & Core Values
           </h3>
@@ -65,10 +65,10 @@ function About() {
 
 
       {/* information */}
-      <div  className="container mt-28 mx-auto p-4 h-auto">
+      <div className="container mt-28 mx-auto p-4 h-auto">
         <div className="grid grid-cols-1 gap-4 lg:grid-cols-4 md:grid-cols-2">
           {/* items */}
-          <div  data-aos="fade-up" data-aos-duration="400" className=" place-items-center h-full p-4 w-full text-center">
+          <div data-aos="fade-up" data-aos-duration="400" className=" place-items-center h-full p-4 w-full text-center">
             <FaRegCircle className="my-3" size={35} />
             <div>
               <h4 className="font-semibold  capitalize text-lg">
@@ -79,7 +79,7 @@ function About() {
               </p>
             </div>
           </div>
-          <div  data-aos="fade-up" data-aos-duration="500" className="place-items-center h-ful p-4 w-full text-center">
+          <div data-aos="fade-up" data-aos-duration="500" className="place-items-center h-ful p-4 w-full text-center">
             <FaSearch className="my-3" size={35} />
             <div>
               <h4 className="font-semibold capitalize text-lg">
@@ -90,18 +90,18 @@ function About() {
               </p>
             </div>
           </div>
-          <div  data-aos="fade-up" data-aos-duration="600" className=" place-items-center h-full p-4 w-full text-center">
+          <div data-aos="fade-up" data-aos-duration="600" className=" place-items-center h-full p-4 w-full text-center">
             <FaUserFriends className="my-3" size={35} />
             <div>
               <h4 className="font-semibold  capitalize text-lg">
-              Book a session
+                Book a session
               </h4>
               <p className="my-5">
                 Schedule  appointments with a therapist who resonates with you and engage fully in tailored sessions designed for your personal growth and recovery.
               </p>
             </div>
           </div>
-          <div  data-aos="fade-up" data-aos-duration="700" className=" place-items-center h-full p-4 w-full text-center">
+          <div data-aos="fade-up" data-aos-duration="700" className=" place-items-center h-full p-4 w-full text-center">
             <BsChatSquareDotsFill className="my-3" size={35} />
             <div>
               <h4 className="font-semibold  capitalize text-lg">
@@ -117,16 +117,16 @@ function About() {
       </div>
 
       {/* Description of the CEO */}
-      <section className="mt-40"> 
+      <section className="mt-40">
         <div className="container w-full mx-auto p-4 rounded-lg">
           <div className="text-center my-10 font-bold">
-            <h4  data-aos="fade-up" className="uppercase text-xl lg:text-2xl">
+            <h4 data-aos="fade-up" className="uppercase text-xl lg:text-2xl">
               get to know our ceo
             </h4>
           </div>
           <div className="h-auto relative  rounded-2xl flex flex-col lg:flex-row-reverse gap-3 lg:gap-6 w-full py-10 px-4 items-center justify-around ">
             {/* CEO img */}
-            <div  data-aos="fade-up" className="">
+            <div data-aos="fade-up" className="">
               <div className="flex-1 lg:flex-auto h-72 lg:h-80 lg:max-w-64 overflow-hidden rounded-lg">
                 <img
                   src={dir_img}
@@ -134,63 +134,58 @@ function About() {
                   className="object-cover h-full w-full"
                 />
               </div>
-              <div className="flex bg-black rounded-lg mt-5 py-4 px-1 items-center gap-4 justify-center">
-                {/* <div className="flex items-center justify-center rounded-full p-2 bg-green-900">
-                  <FaFacebook size={20} />
-
-                </div> */}
-              </div>
-            </div>
-
-            {/* CEO description */}
-            <div  data-aos="fade-down" className=" mt-8 flex-1 lg:w-full lg:m-0 text-black">
-              <div className="text-center">
-                <h3 className="font-bold text-lg lg:text-2xl uppercase">
-                  Alexander comfort
-                </h3>
-                <div className="italic my-2 text-md lg:text-lg uppercase">
-                  the girl who stood up for mental health in nigeria
-                </div>
-              </div>
-              <hr className="border-2 rounded-lg border-slate-900" />
-              <div className="mt-8 ">
-                <p className="mt-4">
-                  She is a practicing counseling psychologist specializing in
-                  Clinical and Mental Health Counseling. With a strong
-                  commitment to advancing mental health awareness and education,
-                  Alexander has spearheaded various initiatives across Nigeria,
-                  bringing critical mental health discussions to diverse
-                  audiences.
-                </p>
-                <p className="mt-4">
-                  She parades herself in telling Mental health stories the
-                  African way. Her mission is clear - it is to inspire a
-                  widespread shift towards proactive mental health practices,
-                  fostering healthier and sounder lives for all, equipping
-                  individuals with the tools to navigate Mental health
-                  challenges, prevent triggers and cultivate a holistic
-                  wellbeing.
-                </p>
-                <p className="mt-4">
-                  One of her notable achievements includes training over a
-                  thousand staff members of the Niger Delta Development
-                  Commission on “The Psychology of Debt.“ This empowering
-                  discussion explored the profound impact of our relationship
-                  with money on overall well-being and mental health, providing
-                  valuable insights into how mindset shapes financial behaviors
-                  and mental health outcomes.
-                </p>
-              </div>
             </div>
           </div>
+
+          {/* CEO description */}
+          <div data-aos="fade-down" className=" mt-8 flex-1 lg:w-full lg:m-0 text-black">
+            <div className="text-center">
+              <h3 className="font-bold text-lg lg:text-2xl uppercase">
+                Alexander comfort
+              </h3>
+              <div className="italic my-2 text-md lg:text-lg uppercase">
+                the girl who stood up for mental health in nigeria
+              </div>
+            </div>
+            <hr className="border-2 rounded-lg border-slate-900" />
+            <div className="mt-8 ">
+              <p className="mt-4">
+                She is a practicing counseling psychologist specializing in
+                Clinical and Mental Health Counseling. With a strong
+                commitment to advancing mental health awareness and education,
+                Alexander has spearheaded various initiatives across Nigeria,
+                bringing critical mental health discussions to diverse
+                audiences.
+              </p>
+              <p className="mt-4">
+                She parades herself in telling Mental health stories the
+                African way. Her mission is clear - it is to inspire a
+                widespread shift towards proactive mental health practices,
+                fostering healthier and sounder lives for all, equipping
+                individuals with the tools to navigate Mental health
+                challenges, prevent triggers and cultivate a holistic
+                wellbeing.
+              </p>
+              <p className="mt-4">
+                One of her notable achievements includes training over a
+                thousand staff members of the Niger Delta Development
+                Commission on “The Psychology of Debt.“ This empowering
+                discussion explored the profound impact of our relationship
+                with money on overall well-being and mental health, providing
+                valuable insights into how mindset shapes financial behaviors
+                and mental health outcomes.
+              </p>
+            </div>
+          </div>
+
         </div>
-      </section>
+      </section >
 
 
       {/* Questions */}
-      <div>
+      < div >
         <Frequent />
-      </div>
+      </div >
     </>
   );
 }

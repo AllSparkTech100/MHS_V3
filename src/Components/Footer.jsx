@@ -1,4 +1,4 @@
-import { FaFacebook, FaLocationArrow, FaLinkedinIn, FaInstagram, FaMailBulk } from "react-icons/fa";
+import { FaFacebook, FaLocationArrow, FaLinkedinIn, FaInstagram } from "react-icons/fa";
 // import { IoIosChatbubbles } from "react-icons/io";
 import { IoCall } from "react-icons/io5";
 import { PiLinktreeLogoBold } from "react-icons/pi";
@@ -98,9 +98,6 @@ function Footer() {
             <ul className="list-none ">
               <li className="text-lg my-4 capitalize flex items-center gap-2 lg:text-xl">
                 <FaLocationArrow size={20} /><span>port-harcourt, nigeria</span>
-              </li>
-              <li className="text-lg  flex items-center gap-2  my-4 lg:text-xl">
-                <FaMailBulk size={20} /> &nbsp;<a href="mailto:mentalhealthplus24@gmail.com">mentalhealthplus24@gmail.com</a>
               </li>
               <li className="text-lg flex items-center gap-2  my-4 lg:text-xl">
                 <IoCall size={20} /><a href="tel:+2348149944531"> +2348149944531</a>

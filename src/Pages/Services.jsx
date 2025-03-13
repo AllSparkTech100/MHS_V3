@@ -26,7 +26,7 @@ function Services() {
 
         <div  data-aos="fade-down" className="flex items-center justify-center">
           <button type="submit" className="text-center p-4 bg-[#02514b] w-60 flex items-center justify-center gap-4 rounded-lg text-white lg:hover:scale-90 lg:transition-all ">
-            <a href="/booking" className='flex items-center justify-center gap-4'>  <LuSend size={25} />Book now</a>
+            <a href="mailto:mentalhealthplus24@gmail.com" className='flex items-center justify-center gap-4'>  <LuSend size={25} />Book now</a>
           </button>
         </div>
       </div>
