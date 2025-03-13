@@ -11,8 +11,8 @@ function ContactCard() {
     <>
       <div className="container h-full mx-auto mt-32 mb-10  p-5">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 ">
-          <div data-aos="fade-up" className="p-5">
-            <div  className="my-4">
+          <div className="p-5">
+            <div className="my-4">
               <h3 className="font-bold text-yellow-500 text-xl lg:text-2xl mb-1 uppercase">
                 send us a message
               </h3>
@@ -28,7 +28,7 @@ function ContactCard() {
             </div>
           </div>
 
-          <div data-aos="fade-down" className="h-full order-first lg:order-none md:order-none w-full">
+          <div className="h-full order-first lg:order-none md:order-none w-full">
             <img src={work} alt="" className=" h-full w-full" />
           </div>
         </div>
@@ -41,12 +41,12 @@ function ContactCard() {
             get in touch
           </h3>
 
-          <h4 data-aos="fade-up" className="text-xl lg:text-3xl capitalize">
+          <h4 className="text-xl lg:text-3xl capitalize">
             seamless communication, global Impact</h4>
         </div>
         <div className="grid grid-cols-1 mt-20 gap-5 lg:grid-cols-3 md:grid-cols-2">
           {/* Address */}
-          <div data-aos="fade-up" className="bg-gray-700 rounded-md flex  justify-center flex-col h-60 p-5">
+          <div className="bg-gray-700 rounded-md flex  justify-center flex-col h-60 p-5">
             <div className=" text-center text-white">
               <FaLocationDot className="mb-3 mx-auto" size={30} />
               <h3 className="mt-3 mb-3 font-semibold text-xl">Head Office</h3>
@@ -54,7 +54,7 @@ function ContactCard() {
             </div>
           </div>
           {/* Email Contact */}
-          <div data-aos="fade-up" className="bg-[#a29f9ff0] lg:col-span-1  md:col-span-2 text-black rounded-md flex justify-center flex-col h-60 p-5">
+          <div className="bg-[#a29f9ff0] lg:col-span-1  md:col-span-2 text-black rounded-md flex justify-center flex-col h-60 p-5">
             <div className=" text-center ">
               <GoMail className="mb-3 mx-auto" size={30} />
               <h3 className="mt-3 mb-3 font-semibold text-xl">Email Us</h3>
@@ -76,7 +76,7 @@ function ContactCard() {
             </div>
           </div>
           {/* Phone Contact */}
-          <div data-aos="fade-up" className="bg-gray-700 lg:col-span-1 md:col-span-3 rounded-md flex  justify-center flex-col h-60 p-5">
+          <div className="bg-gray-700 lg:col-span-1 md:col-span-3 rounded-md flex  justify-center flex-col h-60 p-5">
             <div className=" text-center text-white">
               <IoCall className="mb-3 mx-auto" size={30} />
               <h3 className="mt-3 mb-3 font-semibold text-xl">Give us a Call</h3>

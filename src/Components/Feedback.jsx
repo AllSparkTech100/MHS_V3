@@ -51,7 +51,7 @@ function Feedback() {
   ];
   return (
     <>
-      <div data-aos="fade-up" className="h-auto pt-10 px-5 pb-12 lg:p-8 m:p-8 bg-[#02514b] w-full">
+      <div className="h-auto pt-10 px-5 pb-12 lg:p-8 m:p-8 bg-[#02514b] w-full">
         <Splide
           options={{
             perPage: 2,

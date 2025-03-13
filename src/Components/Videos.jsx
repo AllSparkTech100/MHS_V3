@@ -17,7 +17,7 @@ function Videos() {
             text: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore impedit voluptatibus totam in sapiente, quod distinctio quam itaque blanditiis veniam soluta nihil necessitatibus voluptas repellendus quia alias? Repellat, quod facere."
         },
     ];
-    // const repeatedItems = Array(6).fill(null).map((_, index) => videoSet[index % videoSet.length]);
+
     return (
         <>
             <div className="container mx-auto mt-10">
@@ -25,7 +25,7 @@ function Videos() {
                     {videoSet.map((items, index) => {
                         return (
                             <div key={index} className="rounded-lg h-auto  bg-black overflow-hidden">
-                            <Card className='border-slate-500 w-full border-2'>
+                                <Card className='border-slate-500 w-full border-2'>
                                     <CardActionArea>
                                         <CardMedia
                                             alt={items.title} >

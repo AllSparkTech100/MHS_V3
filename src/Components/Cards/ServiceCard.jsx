@@ -7,7 +7,6 @@ import {
     convert,
 } from "../../lib/Images";
 
-// import { FaUserFriends } from "react-icons/fa";
 
 function ServiceCard() {
     return (
@@ -15,10 +14,10 @@ function ServiceCard() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 items-center lg:gap-y-10 gap-y-6 gap-x-4 p-4 lg:grid-cols-3">
 
-                <div data-aos='fade-up' className="h-64 lg:h-64 md:h-96 w-full object-center overflow-hidden rounded-lg">
+                <div className="h-64 lg:h-64 md:h-96 w-full object-center overflow-hidden rounded-lg">
                     <img src={art} loading='lazy' className="object-cover w-full h-full" alt="Art Therapy" />
                 </div>
-                <div data-aos='fade-up' className="...">
+                <div className="...">
                     <h4 className="capitalize flex items-center gap-4 text-2xl lg:text-3xl font-semibold">
                         art therapy
                     </h4>
@@ -27,10 +26,10 @@ function ServiceCard() {
                     </p>
                 </div>
                 {/* first */}
-                <div data-aos='fade-up' className="h-64 lg:h-64 md:h-96 w-full object-center overflow-hidden rounded-lg">
+                <div className="h-64 lg:h-64 md:h-96 w-full object-center overflow-hidden rounded-lg">
                     <img src={counsel} loading="lazy" className="object-cover w-full h-full" alt="Cognitive Thearpy" />
                 </div>
-                <div data-aos='fade-up' className="...">
+                <div className="...">
                     <h4 className="capitalize flex items-center gap-4 text-2xl lg:text-3xl font-semibold  ">
                         cognitive-behavioural therapy
                     </h4>
@@ -39,10 +38,10 @@ function ServiceCard() {
                     </p>
                 </div>
                 {/* second */}
-                <div data-aos='fade-up' className="h-64 lg:h-64 md:h-96 w-full object-center overflow-hidden rounded-lg">
+                <div className="h-64 lg:h-64 md:h-96 w-full object-center overflow-hidden rounded-lg">
                     <img src={child_counsel} loading="lazy" className="object-cover object-top w-full h-full" alt="REBT" />
                 </div>
-                <div data-aos='fade-up' className="...">
+                <div className="...">
                     <h4 className="capitalize flex items-center gap-4 text-2xl lg:text-3xl  font-semibold  ">
                         Dialectical behavioural/REBT
                     </h4>
@@ -51,10 +50,10 @@ function ServiceCard() {
                     </p>
                 </div>
                 {/* third */}
-                <div data-aos='fade-up' className="h-64 lg:h-64 md:h-96 w-full object-center overflow-hidden rounded-lg">
+                <div className="h-64 lg:h-64 md:h-96 w-full object-center overflow-hidden rounded-lg">
                     <img src={therapist_img} loading="lazy" className="object-top object-cover w-full h-full" alt="Behaviour Modification" />
                 </div>
-                <div data-aos='fade-up' className="...">
+                <div className="...">
                     <h4 className="capitalize flex items-center gap-4 text-2xl lg:text-3xl font-semibold  ">
                         behavioural modification
                     </h4>
@@ -63,10 +62,10 @@ function ServiceCard() {
                     </p>
                 </div>
                 {/* fourth */}
-                <div data-aos='fade-up' className="h-64 lg:h-64 md:h-96 w-full object-center overflow-hidden rounded-lg">
+                <div className="h-64 lg:h-64 md:h-96 w-full object-center overflow-hidden rounded-lg">
                     <img src={converse} loading="lazy" className="object-cover w-full h-full" alt="Counselling" />
                 </div>
-                <div data-aos='fade-up' className="...">
+                <div className="...">
                     <h4 className="capitalize flex items-center gap-4 text-2xl lg:text-3xl font-semibold  ">
                         counselling
                     </h4>
@@ -75,10 +74,10 @@ function ServiceCard() {
                     </p>
                 </div>
                 {/* fifth */}
-                <div data-aos='fade-up' className="h-64 lg:h-64 md:h-96 w-full object-center overflow-hidden rounded-lg">
+                <div className="h-64 lg:h-64 md:h-96 w-full object-center overflow-hidden rounded-lg">
                     <img src={suicide} loading="lazy" className="object-cover w-full h-full" alt="Suicide Intervention" />
                 </div>
-                <div data-aos='fade-up' className="...">
+                <div className="...">
                     <h4 className="capitalize flex items-center gap-4 text-2xl lg:text-3xl font-semibold  ">
                         suicide intervention
                     </h4>
@@ -87,10 +86,10 @@ function ServiceCard() {
                     </p>
                 </div>
                 {/* sixth */}
-                <div data-aos='fade-up' className="h-64 lg:h-64 md:h-96 w-full object-center overflow-hidden rounded-lg">
+                <div className="h-64 lg:h-64 md:h-96 w-full object-center overflow-hidden rounded-lg">
                     <img src={convert} loading="lazy" className="object-cover w-full h-full" alt="Psycho Education" />
                 </div>
-                <div data-aos='fade-up' className="...">
+                <div className="...">
                     <h4 className="capitalize flex items-center gap-4 text-2xl lg:text-3xl font-semibold  ">
                         psycho education
                     </h4>
