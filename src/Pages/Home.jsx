@@ -6,13 +6,22 @@ import {
   converse,
   convert,
 } from "../lib/Images";
+import { useState } from 'react'
 import { FaArrowCircleRight, FaDonate } from "react-icons/fa";
 import Feedback from "../Components/Feedback";
 import Frequent from "../Components/Frequent";
 import ModalPopup from "../Components/Modal";
+import AccountCard from "../Components/Cards/AccountCard"
 
 
 function Home() {
+
+
+  const [isCard, setIsCard] = useState(false);
+
+  const openCard = () => {
+    setIsCard(!isCard)
+  }
   return (
     <>
       {/* Hero */}
@@ -214,18 +223,17 @@ function Home() {
           today!!!
         </p>
 
-        <button className="disabled:opacity-40 bg-green-900 my-5 p-3">
-          <a
-            href=""
-            className="text-white flex items-center justify-between gap-4"
-          >
-            Donate Now{" "}
-            <span>
-              <FaDonate size={20} />
-            </span>{" "}
-          </a>
-        </button>
+        <div onClick={openCard} className="lg:cursor-pointer flex justify-center items-center gap-4 bg-green-900 my-5 p-3">
+
+          Donate Now{" "}
+          <span>
+            <FaDonate size={20} />
+          </span>
+        </div>
       </div>
+
+      {isCard && <AccountCard />}
+
 
       <section className="mt-40 lg:mt-72">
         <h3 className="text-center text-2xl mb-16 font-bold capitalize underline decoration-slate-500">
