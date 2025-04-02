@@ -6,6 +6,7 @@ export default function ModalPopup() {
     const [isOpen, setIsOpen] = useState(false)
     const eventDate = new Date("2025-05-10T23:59:59").getTime();
     const [timeLeft, setTimeLeft] = useState(eventDate - new Date().getTime());
+
     useEffect(() => {
         const interval = setInterval(() => {
             setTimeLeft(eventDate - new Date().getTime());

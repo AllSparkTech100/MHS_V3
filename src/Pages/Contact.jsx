@@ -1,5 +1,7 @@
 import ContactCard from "../Components/Cards/ContactCard";
 
+
+
 function Contact() {
   return (
     <>
@@ -10,15 +12,15 @@ function Contact() {
               <h4 className=" uppercase text-center text-2xl md:text-5xl lg:text-7xl font-bold">
                 contact us
               </h4>
-             
+
             </div>
           </div>
         </div>
       </div>
-<div>
-  
-<ContactCard />
-</div>
+      <div>
+
+        <ContactCard />
+      </div>
     </>
   );
 }

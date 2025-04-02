@@ -10,7 +10,7 @@ function AccountCard() {
     const [copied, setCopied] = useState(false);
 
     const numberCopy = () => {
-        navigator.clipboard.writeText(name, number, bank);
+        navigator.clipboard.writeText(number);
         setCopied(true);
         setTimeout(() => setCopied(false), 1500);
     };
@@ -26,7 +26,7 @@ function AccountCard() {
     };
 
     return (
-        <div className="w-30 p-4  border border-gray-300 shadow-md rounded-xl">
+        <div className="w-30 p-4 border border-gray-300 shadow-md rounded-xl">
             <div className="flex flex-col items-center justify-between">
                 <div className="flex items-center justify-between w-full mb-3">
                     <span className="text-lg font-medium ">{number}</span>
