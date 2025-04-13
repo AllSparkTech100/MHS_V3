@@ -27,7 +27,7 @@ function Home() {
       {/* Hero */}
 
       <div className="relative h-96 lg:h-screen">
-        <div className="absolute bg-no-repeat inset-0 bg-[url('/calm.jpg')] bg-cover bg-center before:absolute before:inset-0 before:bg-gradient-to-b before:from-black/50 before:to-black/55">
+        <div className="absolute bg-no-repeat inset-0 bg-[url('/calm.jpg')] bg-cover bg-bottom  before:absolute before:inset-0 before:bg-gradient-to-b before:from-black/50 before:to-black/55">
           <div className="relative p-5 container mx-auto my-20 lg:my-56">
             <h1 className="uppercase text-3xl md:text-5xl lg:text-7xl font-bold text-white"> mental health, <br />is preserved wealth</h1>
             <div className="flex items-center mt-3 gap-5">
