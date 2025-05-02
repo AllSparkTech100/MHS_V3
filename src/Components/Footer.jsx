@@ -49,7 +49,7 @@ function Footer() {
           </div>
           {/*  */}
           <div className="my-4 text-white">
-            <h4 className="uppercase text-lg lg:text-2xl  font-medium">
+            <h4 className="uppercase text-lg lg:text-2xl font-bold">
               open hours
             </h4>
             <ul className="list-none">
@@ -68,7 +68,7 @@ function Footer() {
           </div>
           {/* links */}
           <div className="my-4 text-white">
-            <h4 className="uppercase text-lg lg:text-2xl  font-medium">
+            <h4 className="uppercase text-lg lg:text-2xl font-bold">
               quick links
             </h4>
             <ul className="list-none capitalize">
@@ -92,7 +92,7 @@ function Footer() {
           </div>
           {/* contact */}
           <div className="my-4 text-white">
-            <h4 className="uppercase text-lg lg:text-2xl  font-medium">
+            <h4 className="uppercase text-lg lg:text-2xl font-bold">
               contact details
             </h4>
             <ul className="list-none ">
