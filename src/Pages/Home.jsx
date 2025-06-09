@@ -64,7 +64,6 @@ function Home() {
     setCurrentSlide((prev) => (prev - 1 + heroSlides.length) % heroSlides.length);
   };
 
-
   const [isCard, setIsCard] = useState(false);
 
   const openCard = () => {
@@ -72,25 +71,7 @@ function Home() {
   }
   return (
     <>
-      {/* Hero */}
-
-      {/* <div className="relative h-96 lg:h-screen">
-        <div className="absolute bg-no-repeat inset-0 bg-[url('/panel.jpg')] bg-cover bg-bottom  before:absolute before:inset-0 before:bg-gradient-to-b before:from-black/50 before:to-black/55">
-          <div className="relative p-5 container mx-auto my-20 lg:my-56">
-            <h1 className="uppercase text-3xl md:text-5xl lg:text-7xl font-bold text-white"> mental health, <br />is preserved wealth</h1>
-            <div className="flex items-center mt-3 gap-5">
-              <button className="bg-green-600 px-6 py-3 rounded-md lg:transition-all inline-block lg:hover:scale-90 ">
-                <a href="https://www.facebook.com/profile.php?id=61556235412055&mibextid=ZbWKwL" target='blank' className=" text-white uppercase font-semibold ">Join Us</a>
-              </button>
-              <button className="bg-green-600 px-6 py-3 rounded-md lg:transition-all inline-block lg:hover:scale-90 ">
-                <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Flinktr.ee%2Falexandercomfort%3Futm_source%3Dlinktree_profile_share%26ltsid%3Df41c21af-fc50-4521-9a94-8f4f088fcfeb%26fbclid%3DIwZXh0bgNhZW0CMTAAAR1jZoEUfub2UwRBCrNfsAKlruLKWWuNkB99SY6UokFvuyxKFdoDwodGJSk_aem_1z5xpQW77wyTs184hGKEjg&h=AT1GVz_COQdBbxpc5hCN4Fx6AMQdLR0ozt1N8dmn0lFm1AkNbDJOpFD5iYFfY3xX5WzbixvoysVJzjzbm8_IEaoUNCzmVbb1LSjhMaZYQG9vFLUYbKxI4_sowzGs4xkoQv3xPg" className=" text-white uppercase font-semibold " target='_blank'>Learn More</a>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div> */}
-
-   {/* Hero Carousel */}
+      {/* Hero Carousel */}
       <div className="relative h-96 lg:h-screen overflow-hidden">
         {/* Slides */}
         {heroSlides.map((slide, idx) => (
