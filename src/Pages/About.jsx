@@ -9,7 +9,8 @@ function About() {
   return (
     <>
       <div className="relative h-80 md:h-[35rem] lg:h-[30rem]">
-        <div className="absolute bg-no-repeat inset-0 bg-[url('/akw/ak4.webp')] bg-cover bg-bottom lg:bg-[center_top_-10rem] before:absolute before:inset-0 before:bg-gradient-to-b before:from-black/50 before:to-black/55">
+        <div className="absolute bg-no-repeat inset-0 bg-[url('/akw/ak4.webp')] bg-cover bg-center before:absolute before:inset-0 before:bg-gradient-to-b before:from-black/65 before:to-black/85">
+          {/* lg:bg-[center_top_-10rem] */}
           <div className="relative p-5 mx-auto my-28 md:my-56 lg:my-48 ">
             <div className="flex-col justify-center items-center flex text-white gap-8 place-items-center">
               <h1 className=" uppercase text-center text-2xl md:text-5xl lg:text-7xl font-bold">
@@ -124,57 +125,59 @@ function About() {
               get to know our ceo
             </h4>
           </div>
-          <div className="h-auto relative  rounded-2xl flex flex-col lg:flex-row-reverse gap-3 lg:gap-6 w-full py-10 px-4 items-center justify-around ">
-            {/* CEO img */}
-            <div className="">
-              <div className="flex-1 lg:flex-auto h-72 lg:h-80 lg:max-w-64 overflow-hidden rounded-lg">
-                <img
-                  src={dir_img}
-                  alt="The CEO"
-                  className="object-cover h-full w-full"
-                />
+          <div className=' flex items-center flex-col md:flex-row lg:flex-row gap-4'>
+            <div className="h-auto md:flex-1 flex-auto relative  rounded-2xl flex flex-col lg:flex-row-reverse gap-3 lg:gap-6 py-10 px-4 items-center justify-around ">
+              {/* CEO img */}
+              <div className="">
+                <div className="flex-1 lg:flex-auto h-72 lg:h-80 lg:max-w-64 overflow-hidden rounded-lg">
+                  <img
+                    src={dir_img}
+                    alt="The CEO"
+                    className="object-cover h-full w-full"
+                  />
+                </div>
               </div>
             </div>
-          </div>
 
-          {/* CEO description */}
-          <div className=" mt-8 flex-1 lg:w-full lg:m-0 text-black">
-            <div className="text-center">
-              <h3 className="font-bold text-lg lg:text-2xl uppercase">
-                Alexander comfort
-              </h3>
-              <div className="italic my-2 text-md lg:text-lg uppercase">
-                the girl who stood up for mental health in nigeria
+            {/* CEO description */}
+            <div className=" mt-8 flex-1/2 lg:w-full lg:m-0 text-black">
+              <div className="text-center">
+                <h3 className="font-bold text-lg lg:text-2xl uppercase">
+                  Alexander comfort
+                </h3>
+                <div className="italic my-2 text-md lg:text-lg uppercase">
+                  the girl who stood up for mental health in nigeria
+                </div>
               </div>
-            </div>
-            <hr className="border-2 rounded-lg border-slate-900" />
-            <div className="mt-8 ">
-              <p className="mt-4">
-                She is a practicing counseling psychologist specializing in
-                Clinical and Mental Health Counseling. With a strong
-                commitment to advancing mental health awareness and education,
-                Alexander has spearheaded various initiatives across Nigeria,
-                bringing critical mental health discussions to diverse
-                audiences.
-              </p>
-              <p className="mt-4">
-                She parades herself in telling Mental health stories the
-                African way. Her mission is clear - it is to inspire a
-                widespread shift towards proactive mental health practices,
-                fostering healthier and sounder lives for all, equipping
-                individuals with the tools to navigate Mental health
-                challenges, prevent triggers and cultivate a holistic
-                wellbeing.
-              </p>
-              <p className="mt-4">
-                One of her notable achievements includes training over a
-                thousand staff members of the Niger Delta Development
-                Commission on “The Psychology of Debt.“ This empowering
-                discussion explored the profound impact of our relationship
-                with money on overall well-being and mental health, providing
-                valuable insights into how mindset shapes financial behaviors
-                and mental health outcomes.
-              </p>
+              <hr className="border-2 rounded-lg border-slate-900" />
+              <div className="mt-8 ">
+                <p className="mt-4">
+                  She is a practicing counseling psychologist specializing in
+                  Clinical and Mental Health Counseling. With a strong
+                  commitment to advancing mental health awareness and education,
+                  Alexander has spearheaded various initiatives across Nigeria,
+                  bringing critical mental health discussions to diverse
+                  audiences.
+                </p>
+                <p className="mt-4">
+                  She parades herself in telling Mental health stories the
+                  African way. Her mission is clear - it is to inspire a
+                  widespread shift towards proactive mental health practices,
+                  fostering healthier and sounder lives for all, equipping
+                  individuals with the tools to navigate Mental health
+                  challenges, prevent triggers and cultivate a holistic
+                  wellbeing.
+                </p>
+                <p className="mt-4">
+                  One of her notable achievements includes training over a
+                  thousand staff members of the Niger Delta Development
+                  Commission on “The Psychology of Debt.“ This empowering
+                  discussion explored the profound impact of our relationship
+                  with money on overall well-being and mental health, providing
+                  valuable insights into how mindset shapes financial behaviors
+                  and mental health outcomes.
+                </p>
+              </div>
             </div>
           </div>
 
