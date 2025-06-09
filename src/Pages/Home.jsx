@@ -6,7 +6,7 @@ import {
   converse,
   convert,
 } from "../lib/Images";
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { FaArrowCircleRight, FaDonate, FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import Feedback from "../Components/Feedback";
 import Frequent from "../Components/Frequent";
@@ -19,7 +19,7 @@ function Home() {
   // Carousel slides data
   const heroSlides = [
     {
-      image: "/panel.jpg",
+      image: "/panel.webp",
       heading: (
         <>
           mental health, <br />is preserved wealth
@@ -28,7 +28,7 @@ function Home() {
       // You can add more fields like description if needed
     },
     {
-      image: "/panel.jpg",
+      image: "/calmvol.jpg",
       heading: (
         <>
           Empowering Minds, <br />Transforming Lives
@@ -36,7 +36,7 @@ function Home() {
       ),
     },
     {
-      image: "/panel.jpg",
+      image: "/calm1.jpg",
       heading: (
         <>
           Support. <br />Educate. Inspire.
@@ -47,6 +47,15 @@ function Home() {
 
   const [currentSlide, setCurrentSlide] = useState(0);
 
+  // Autoplay effect
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % heroSlides.length);
+    }, 5000); // Change slide every 5 seconds
+
+    return () => clearInterval(interval);
+  }, [heroSlides.length]);
+
   const nextSlide = () => {
     setCurrentSlide((prev) => (prev + 1) % heroSlides.length);
   };
@@ -54,6 +63,7 @@ function Home() {
   const prevSlide = () => {
     setCurrentSlide((prev) => (prev - 1 + heroSlides.length) % heroSlides.length);
   };
+
 
   const [isCard, setIsCard] = useState(false);
 
@@ -80,14 +90,15 @@ function Home() {
         </div>
       </div> */}
 
-      {/* Hero Carousel */}
+   {/* Hero Carousel */}
       <div className="relative h-96 lg:h-screen overflow-hidden">
         {/* Slides */}
         {heroSlides.map((slide, idx) => (
           <div
             key={idx}
-            className={`absolute inset-0 transition-opacity duration-700 ease-in-out ${idx === currentSlide ? "opacity-100 z-10" : "opacity-0 z-0 pointer-events-none"
-              }`}
+            className={`absolute inset-0 transition-opacity duration-700 ease-in-out ${
+              idx === currentSlide ? "opacity-100 z-10" : "opacity-0 z-0 pointer-events-none"
+            }`}
           >
             <div
               className="absolute bg-no-repeat inset-0 bg-cover bg-bottom before:absolute before:inset-0 before:bg-gradient-to-b before:from-black/50 before:to-black/55"
@@ -146,8 +157,9 @@ function Home() {
             <button
               key={idx}
               onClick={() => setCurrentSlide(idx)}
-              className={`w-3 h-3 rounded-full border border-white ${idx === currentSlide ? "bg-green-600" : "bg-white/50"
-                }`}
+              className={`w-3 h-3 rounded-full border border-white ${
+                idx === currentSlide ? "bg-green-600" : "bg-white/50"
+              }`}
               aria-label={`Go to slide ${idx + 1}`}
             />
           ))}
