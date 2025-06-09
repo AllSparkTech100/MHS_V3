@@ -10,7 +10,7 @@ function Carousel (){
           image: "/panel.webp",
           heading: (
             <>
-              mental health, <br />is preserved wealth
+              mental health, <br />is preserved wealth !!
             </>
           ),
           // You can add more fields like description if needed
@@ -19,7 +19,7 @@ function Carousel (){
           image: "/calmvol.jpg",
           heading: (
             <>
-              Empowering Minds, <br />Transforming Lives
+              Empowering Minds, <br />Transforming Lives.
             </>
           ),
         },
@@ -27,7 +27,7 @@ function Carousel (){
           image: "/calm1.jpg",
           heading: (
             <>
-              Support, <br />Educate. Inspire.
+              Support, <br />Educate, Inspire.
             </>
           ),
         },
@@ -63,7 +63,7 @@ function Carousel (){
                     }`}
                   >
                     <div
-                      className="absolute bg-no-repeat inset-0 bg-cover bg-bottom before:absolute before:inset-0 before:bg-gradient-to-b before:from-black/50 before:to-black/55"
+                      className="absolute bg-no-repeat inset-0 bg-cover bg-center before:absolute before:inset-0 before:bg-gradient-to-b before:from-black/50 before:to-black/55"
                       style={{ backgroundImage: `url('${slide.image}')` }}
                     >
                       <div className="relative p-5 container mx-auto my-20 lg:my-56 flex flex-col items-start">
