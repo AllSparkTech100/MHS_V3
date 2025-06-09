@@ -1,8 +1,10 @@
 
 
 function Error() {
+
   return (
-    <div>Error</div>
+    <div className="h-screen bg-blue-600 overflow-hidden">
+    </div>
   )
 }
 
