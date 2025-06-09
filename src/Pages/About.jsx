@@ -125,14 +125,15 @@ function About() {
               get to know our ceo
             </h4>
           </div>
-          <div className=' flex items-center flex-col md:flex-row lg:flex-row gap-4'>
-            <div className="h-auto md:flex-1 flex-auto relative  rounded-2xl flex flex-col lg:flex-row-reverse gap-3 lg:gap-6 py-10 px-4 items-center justify-around ">
+          <div className=' lg:grid lg:grid-flow-col items-center flex-col lg:flex-row md:flex-row lg:gap-2 gap-4'>
+            <div className="h-auto md:flex-1 flex-auto relative rounded-2xl flex flex-col  gap-3 lg:gap-6 py-10 px-4 items-center justify-around ">
               {/* CEO img */}
-              <div className="">
-                <div className="flex-1 lg:flex-auto h-72 lg:h-80 lg:max-w-64 overflow-hidden rounded-lg">
+              <div className="lg:row-span-3 lg:grid lg:grid-rows-subgrid gap-4">
+                <div className="flex-1 lg:row-start-2 lg:flex-auto h-72 lg:h-80 lg:max-w-64 overflow-hidden rounded-lg">
                   <img
                     src={dir_img}
                     alt="The CEO"
+                    loading='lazy'
                     className="object-cover h-full w-full"
                   />
                 </div>
@@ -152,30 +153,26 @@ function About() {
               <hr className="border-2 rounded-lg border-slate-900" />
               <div className="mt-8 ">
                 <p className="mt-4">
-                  She is a practicing counseling psychologist specializing in
-                  Clinical and Mental Health Counseling. With a strong
-                  commitment to advancing mental health awareness and education,
-                  Alexander has spearheaded various initiatives across Nigeria,
-                  bringing critical mental health discussions to diverse
-                  audiences.
+                  Alexander Comfort is a practicing counseling psychologist specializing in clinical and Mental Health Counseling. with clinical and psychopharmacological knowledge. All with a strong commitment to advancing mental health awareness and education, Alexander has spearheaded various initiatives across Nigeria, bringing critical mental health discussions to diverse audiences.
                 </p>
                 <p className="mt-4">
-                  She parades herself in telling Mental health stories the
-                  African way. Her mission is clear - it is to inspire a
-                  widespread shift towards proactive mental health practices,
-                  fostering healthier and sounder lives for all, equipping
-                  individuals with the tools to navigate Mental health
-                  challenges, prevent triggers and cultivate a holistic
-                  wellbeing.
+                  She prides herself in telling mental health stories the African way. Her mission is clear - it is to inspire a widespread shift towards proactive mental health practices, fostering
+                  healthier and sounder lives for all, equipping individuals with the tools to navigate Mental health challenges, prevent triggers and cultivate a holistic wellbeing.
+
+                  Alexander Comfort has led significant initiatives, one of which is the Makurdi SANE Campaign, which focuses on promoting adaptive coping strategies among military
+                  personnel. This campaign was instrumental in fostering mental resilience and improving mental health support within the military community.
                 </p>
                 <p className="mt-4">
-                  One of her notable achievements includes training over a
-                  thousand staff members of the Niger Delta Development
-                  Commission on “The Psychology of Debt.“ This empowering
-                  discussion explored the profound impact of our relationship
-                  with money on overall well-being and mental health, providing
-                  valuable insights into how mindset shapes financial behaviors
-                  and mental health outcomes.
+                  The Akwa-Ibom State Mental Health Awareness Conference
+                  and the Annual Port Harcourt SANE CONFERENCE.
+
+                  As a seasoned speaker and mental health advocate, Alexander Comfort has facilitated discussions and training on mental and psychological well-being, for professionals
+                  across various industries, some of which includes; the Niger Delta Development Commission, Chartered Institute
+                  of Personnel Management, Olam Agri Nigeria, Librod Energy Services, First Independent Power Limited, Stakeholders Democracy Network and a lot others.
+                  In addition to her counseling expertise,
+
+                  Alexander also holds a degree in human physiology, certified in risk and trauma management in resettlement and displacement.
+                  She currently serves as the Rivers State Coordinator for the Global Crusaders Against Narcotics and Alcohol Abuse, where she continues to contribute to public health initiatives aimed at reducing substance abuse and promoting mental wellness.
                 </p>
               </div>
             </div>
