@@ -121,7 +121,7 @@ function About() {
       <section className="mt-40">
         <div className="container w-full mx-auto p-4 rounded-lg">
           <div className="text-center my-10 font-bold">
-            <h4 className="uppercase text-xl lg:text-2xl">
+            <h4 className="uppercase text-left text-xl lg:text-2xl">
               get to know our ceo
             </h4>
           </div>

@@ -52,7 +52,7 @@ function Home (){
       <section className="mt-20 lg:mt-40 p-5">
         <div className="grid grid-cols-1 items-center gap-8 lg:grid-cols-3 md:grid-cols-2">
           <div className="my-5">
-            <h3 className="text-left mb-4 md:mb-8 capitalize text-2xl font-bold">
+            <h3 className="text-left mb-4 text-[#1d3f39] md:mb-8 capitalize text-2xl font-bold">
               engaging events
             </h3>
             <p className="my-5 text-left text-sm">
@@ -97,7 +97,7 @@ function Home (){
       <section className="mt-20 lg:mt-40 p-5 lg:p-12">
         <div className="grid grid-cols-1 items-center lg:flex-row-reverse gap-6 lg:grid-cols-3 md:grid-cols-2">
           <div className="my-5 lg:order-last">
-            <h3 className="text-left mb-4 md:mb-8 capitalize text-2xl font-bold">
+            <h3 className="text-left text-[#1d3f39] mb-4 md:mb-8 capitalize text-2xl font-bold">
               highlighted resources
             </h3>
             <p className="my-5 text-left text-sm">
@@ -144,7 +144,7 @@ function Home (){
       <section className="mt-20 lg:mt-40 p-5 lg:p-12">
         <div className="grid grid-cols-1 items-center gap-6 lg:grid-cols-3 md:grid-cols-2">
           <div className="my-5">
-            <h3 className="text-left mb-4 md:mb-8 capitalize text-2xl font-bold">
+            <h3 className="text-left text-[#1d3f39] mb-4 md:mb-8 capitalize text-2xl font-bold">
               join the conversation
             </h3>
             <p className="my-5 text-left text-sm">
@@ -215,10 +215,9 @@ function Home (){
         </Modal>
       </div>
 
-
       <section className="mt-40 lg:mt-72">
-        <h3 className="text-center text-2xl mb-16 font-bold capitalize underline decoration-slate-500">
-          what people say about us
+        <h3 className="text-left ms-4 text-2xl mb-16 font-bold capitalize text-black">
+          testimonies
         </h3>
         <Feedback />
       </section>
