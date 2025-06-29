@@ -33,8 +33,8 @@ function Header() {
 
   return (
     <>
-    {/* bg-[#1d3f39 */}
-      <header className={`sticky top-0 z-[9999] bg-white text-black transition-all duration-300 ${isScrolled ? 'backdrop-blur-md bg-opacity-80 supports-[backdrop-filter]:bg-white/80' : ''}`}>
+      {/* bg-[#1d3f39 */}
+      <header className={`sticky top-0 z-[9999] bg-white text-black transition-all duration-300 ${isScrolled ? 'backdrop-blur-lg bg-opacity-80 supports-[backdrop-filter]:bg-white/80' : ''}`}>
         <div className="flex gap-5 justify-between h-20 items-center p-4 lg:p-2">
 
           <img href='/' src="/mhslogo.webp" alt="Logo" className="w-15 h-10 lg:ml-4" />
