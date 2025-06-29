@@ -23,22 +23,22 @@ function Header() {
   }, [isMenu])
   return (
     <>
-      <header className="sticky top-0 z-[9999] bg-white text-white">
+      <header className="sticky top-0 z-[9999] bg-[#1d3f39] text-white">
         <div className="flex gap-5 justify-between h-20 items-center p-4 lg:p-2">
 
           <img href='/' src="/mhslogo.webp" alt="Logo" className="w-15 h-10 lg:ml-4" />
 
-          <div className="mx-auto text-black ">
+          <div className="mx-auto text-[#88c040]">
             <nav
               className="hidden md:hidden lg:block sm:block basis-1/2 sm:text-lg text-xl"
               aria-label="main">
               {" "}
               <ul className="flex uppercase font-medium items-center gap-5">
-                <li className=" lg:hover:text-black/50 lg:hover:transition-all"> <a href="/">Home</a></li>
-                <li className=" lg:hover:text-black/50 lg:hover:transition-all"><a href="/about">About Us</a></li>
-                <li className=" lg:hover:text-black/50 lg:hover:transition-all"><a href="/contact">Contact Us</a></li>
-                <li className=" lg:hover:text-black/50 lg:hover:transition-all"><a href="/services">Our Services</a></li>
-                <li className=" lg:hover:text-black/50 lg:hover:transition-all"> <a href="/library"> Library</a></li>
+                <li className=" lg:hover:text-[#88c040] lg:hover:transition-all"> <a href="/">Home</a></li>
+                <li className=" lg:hover:text-[#88c040] lg:hover:transition-all"><a href="/about">About Us</a></li>
+                <li className=" lg:hover:text-[#88c040] lg:hover:transition-all"><a href="/contact">Contact Us</a></li>
+                <li className=" lg:hover:text-[#88c040] lg:hover:transition-all"><a href="/services">Our Services</a></li>
+                <li className=" lg:hover:text-[#88c040] lg:hover:transition-all"> <a href="/library"> Library</a></li>
               </ul>
             </nav>
           </div>

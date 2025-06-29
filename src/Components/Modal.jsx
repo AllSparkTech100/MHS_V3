@@ -1,8 +1,10 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { IoClose } from "react-icons/io5";
+// Reusable Modal component for general use
+import PropTypes from "prop-types";
 
-export default function ModalPopup() {
+export function ModalPopup() {
     const [isOpen, setIsOpen] = useState(false)
     const eventDate = new Date("2025-05-10T10:00:00").getTime();
     const [timeLeft, setTimeLeft] = useState(eventDate - new Date().getTime());
@@ -75,3 +77,27 @@ return (
     )
 );
 }
+
+export function Modal({ open, onClose, children }) {
+  if (!open) return null;
+  return (
+    <div onClick={onClose} className="lg:cursor-pointer fixed inset-0 z-[99999] flex items-center justify-center bg-black/50">
+      <div className="bg-white rounded-lg h-72 shadow-lg p-6 relative max-w-82 w-full mx-4">
+        <button
+          onClick={onClose}
+          className="absolute top-2 right-2 text-gray-600 hover:text-red-500 text-2xl font-bold"
+          aria-label="Close Modal"
+        >
+          &times;
+        </button>
+        {children}
+      </div>
+    </div>
+  );
+}
+
+Modal.propTypes = {
+  open: PropTypes.bool.isRequired,
+  onClose: PropTypes.func.isRequired,
+  children: PropTypes.node
+};

@@ -6,22 +6,17 @@ import {
   converse,
   convert,
 } from "../lib/Images";
-import { useState } from 'react'
+import { useState } from "react";
 import { FaArrowCircleRight, FaDonate } from "react-icons/fa";
 import Feedback from "../Components/Feedback";
 import Frequent from "../Components/Frequent";
-// import ModalPopup from "../Components/Modal";
-// import AccountDetails from "../Components/Modal";
 import AccountCard from "../Components/Cards/AccountCard"
 import Carousel from "../Components/Carousel";
+import { Modal } from "../Components/Modal";
 
+function Home (){
 
-function Home() {
-   const [isCard, setIsCard] = useState(false);
-
-  const openCard = () => {
-    setIsCard(!isCard)
-  }
+  const [isCard, setIsCard] = useState(false);
   return (
     <>
       {/* Hero Carousel */}
@@ -194,7 +189,7 @@ function Home() {
       </section>
 
       {/* Donation */}
-      <div className="container-full bg-gray-800 items-center justify-center text-white  mt-32 p-4 text-center flex flex-col gap-6 lg:p-24">
+      <div className="container-full items-center justify-center text-[#1d3f39]  mt-32 p-4 text-center flex flex-col gap-6 lg:p-24">
         <h3 className="text-left mt-12 mb-3 md:mb-8 capitalize text-2xl font-bold lg:text-4xl">
           Donate
         </h3>
@@ -206,17 +201,19 @@ function Home() {
           and create a healthier future for all. Click below to make a donation
           today!!!
         </p>
-
-        <div onClick={openCard} className="lg:cursor-pointer flex justify-center items-center gap-4 bg-green-900 my-5 p-3">
-
-          Donate Now{" "}
-          <span>
+        <button
+          className="lg:cursor-pointer flex justify-center items-center gap-4 bg-[#1d3f39] my-5 p-3"
+          onClick={() => setIsCard(true)}
+        >
+          <span className="text-white font-semibold">Donate Now</span>
+          <span className="text-white">
             <FaDonate size={20} />
           </span>
-        </div>
+        </button>
+        <Modal open={isCard} onClose={() => setIsCard(false)}>
+          <AccountCard />
+        </Modal>
       </div>
-
-      {isCard && <AccountCard />}
 
 
       <section className="mt-40 lg:mt-72">
@@ -230,9 +227,6 @@ function Home() {
         <Frequent />
       </div>
 
-      {/* <div>
-        <ModalPopup />
-      </div> */}
     </>
   );
 }

@@ -1,5 +1,4 @@
 import { FaFacebook, FaLocationArrow, FaLinkedinIn, FaInstagram } from "react-icons/fa";
-// import { IoIosChatbubbles } from "react-icons/io";
 import { IoCall } from "react-icons/io5";
 import { PiLinktreeLogoBold } from "react-icons/pi";
 import { useState, useEffect } from "react";
@@ -15,7 +14,7 @@ function Footer() {
   }, []);
   return (
     <>
-      <div className="h-full p-10 md:p-8 lg:p-12 mt-60 bg-slate-950 ">
+      <div className="h-full p-10 md:p-8 lg:p-12 mt-60 bg-[#1d3f39] ">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 lg:gap-5 md:grid-cols-2">
           <div className=" my-4">
             <h2 className="text-white text-lg lg:text-2xl font-medium uppercase">
@@ -120,7 +119,6 @@ function Footer() {
             <span className="text-white ">Designed with ❤ by Eikasia (AllSpark) Technologies  </span>
           </div>
         </div>
-
       </div>
     </>
   );
