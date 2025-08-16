@@ -34,7 +34,7 @@ function Header() {
   return (
     <>
       {/* bg-[#1d3f39 */}
-      <header className={`sticky top-0 z-[9999] bg-white text-black transition-all duration-300 ${isScrolled ? 'backdrop-blur-lg bg-opacity-80 supports-[backdrop-filter]:bg-white/80' : ''}`}>
+      <header className={`sticky top-0 z-[9999] bg-white text-black transition-all duration-300 ${isScrolled ? 'backdrop-blur-lg shadow-b-lg bg-opacity-80 supports-[backdrop-filter]:bg-white/80' : ''}`}>
         <div className="flex gap-5 justify-between h-20 items-center p-4 lg:p-2">
 
           <img href='/' src="/mhslogo.webp" alt="Logo" className="w-15 h-10 lg:ml-4" />
@@ -55,8 +55,8 @@ function Header() {
           </div>
 
 
-          <button className="p-3 hidden lg:block rounded-lg  bg-green-500">
-            Book a Session
+          <button className="px-3 py-4 hidden lg:block rounded-lg  bg-green-500">
+            <a href="mailto:mentalhealthplus24@gmail.com">Book a Session</a>
           </button>
           <div className="flex items-center flex-row justify-center">
 
@@ -96,7 +96,7 @@ function Header() {
                       <li className="md:mt-7"> <a href="/library"> Library</a></li>
                     </ul>
                     <button className="mt-3 md:mt-12 text-center text-black bg-white rounded-lg w-full p-3 place-items-center">
-                      <a href="https://">Book a Session</a>
+                      <a href="mailto:mentalhealthplus24@gmail.com">Book a Session</a>
 
                     </button>
                   </nav>
