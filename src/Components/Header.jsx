@@ -45,11 +45,11 @@ function Header() {
               aria-label="main">
               {" "}
               <ul className="flex uppercase font-medium items-center gap-5">
-                <li className=" lg:hover:text-[#88c040] lg:hover:transition-all"> <a href="/">Home</a></li>
-                <li className=" lg:hover:text-[#88c040] lg:hover:transition-all"><a href="/about">About Us</a></li>
-                <li className=" lg:hover:text-[#88c040] lg:hover:transition-all"><a href="/contact">Contact Us</a></li>
-                <li className=" lg:hover:text-[#88c040] lg:hover:transition-all"><a href="/services">Our Services</a></li>
-                <li className=" lg:hover:text-[#88c040] lg:hover:transition-all"> <a href="/library"> Library</a></li>
+                <li className=" lg:text-black"> <a href="/">Home</a></li>
+                <li className=" lg:text-black"><a href="/about">About Us</a></li>
+                <li className=" lg:text-black"><a href="/contact">Contact Us</a></li>
+                <li className=" lg:text-black"><a href="/services">Our Services</a></li>
+                <li className=" lg:text-black"> <a href="/library"> Library</a></li>
               </ul>
             </nav>
           </div>
@@ -96,7 +96,8 @@ function Header() {
                       <li className="md:mt-7"> <a href="/library"> Library</a></li>
                     </ul>
                     <button className="mt-3 md:mt-12 text-center text-black bg-white rounded-lg w-full p-3 place-items-center">
-                      <a href="http://">Book a Session</a>
+                      <a href="https://">Book a Session</a>
+
                     </button>
                   </nav>
                 </div>
