@@ -37,7 +37,7 @@ function Header() {
       <header className={`sticky top-0 z-[9999] bg-white text-black transition-all duration-300 ${isScrolled ? 'backdrop-blur-lg shadow-b-lg bg-opacity-80 supports-[backdrop-filter]:bg-white/80' : ''}`}>
         <div className="flex gap-5 justify-between h-20 items-center p-4 lg:p-2">
 
-          <img href='/' src="/mhslogo.webp" alt="Logo" className="w-15 h-10 lg:ml-4" />
+          <img href='/' src="/mhslogo.webp" alt="Logo" loading='lazy' className="w-15 h-10 lg:ml-4" />
 
           <div className="mx-auto text-[#88c040]">
             <nav
@@ -55,8 +55,8 @@ function Header() {
           </div>
 
 
-          <button className="px-3 py-4 hidden lg:block rounded-lg  bg-green-500">
-            <a href="mailto:mentalhealthplus24@gmail.com">Book a Session</a>
+          <button className="px-7 py-3 hidden lg:block rounded-sm  bg-green-500">
+            <a href="mailto:mentalhealthplus24@gmail.com" className="text-white">Get Help </a>
           </button>
           <div className="flex items-center flex-row justify-center">
 
