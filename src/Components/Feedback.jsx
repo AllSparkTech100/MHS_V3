@@ -1,5 +1,4 @@
 /* eslint-disable no-unused-vars */
-
 import { useEffect, useState, useRef } from "react";
 import { IoArrowBackCircleSharp, IoArrowForwardCircleSharp } from "react-icons/io5";
 
@@ -141,5 +140,4 @@ function Feedback() {
     </section>
   );
 }
-
 export default Feedback;
