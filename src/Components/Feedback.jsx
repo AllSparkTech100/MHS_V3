@@ -1,5 +1,7 @@
+/* eslint-disable no-unused-vars */
 
 import { useEffect, useState, useRef } from "react";
+import { IoArrowBackCircleSharp, IoArrowForwardCircleSharp } from "react-icons/io5";
 
 
 const Feeds = [
@@ -67,9 +69,6 @@ function Feedback() {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-
-  // (Autoplay removed)
-
   const next = () => setCurrent((prev) => (prev + 1) % Feeds.length);
   const prev = () => setCurrent((prev) => (prev - 1 + Feeds.length) % Feeds.length);
 
@@ -93,11 +92,11 @@ function Feedback() {
     >
       <button
         onClick={prev}
-        className="absolute left-2 top-1/2 -translate-y-1/2 z-20 bg-white/80 shadow-lg rounded-full p-2 text-2xl"
+        className="absolute left-2 lg:left-20 top-1/2 -translate-y-1/2 z-20 bg-black text-white shadow-lg rounded-full p-2 text-2xl"
         aria-label="Previous testimonial"
         tabIndex={0}
       >
-        &#8592;
+        <IoArrowBackCircleSharp size={20} />
       </button>
       <div className="flex gap-6 items-center justify-center w-full max-w-6xl mx-auto">
         {getVisible().map((item, i) => {
@@ -133,24 +132,12 @@ function Feedback() {
       </div>
       <button
         onClick={next}
-        className="absolute right-2 top-1/2 -translate-y-1/2 z-20 bg-white/80 shadow-lg rounded-full p-2 text-2xl"
+        className="absolute right-2 lg:right-20 top-1/2 -translate-y-1/2 z-20 bg-black text-white shadow-lg rounded-full p-2 text-2xl"
         aria-label="Next testimonial"
         tabIndex={0}
       >
-        &#8594;
+        <IoArrowForwardCircleSharp size={20} />
       </button>
-      {/* Pagination dots */}
-      <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2 z-10">
-        {Feeds.map((_, idx) => (
-          <button
-            key={idx}
-            onClick={() => setCurrent(idx)}
-            aria-label={`Go to testimonial ${idx + 1}`}
-            className={`w-3 h-3 rounded-full border border-[#88c040] ${idx === current ? 'bg-[#88c040]' : 'bg-white/60'}`}
-            tabIndex={0}
-          />
-        ))}
-      </div>
     </section>
   );
 }

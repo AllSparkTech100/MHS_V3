@@ -61,7 +61,8 @@ function Home (){
               individuals with the tools to navigate mental health challenges,
               prevent triggers and cultivate a wholistic wellbeing.
             </p>
-            <button className="bg-green-900 my-5 lg:hover:bg-blue-900 px-4 py-2">
+            {/* px-4 py-2 */}
+            <button className="bg-green-900 my-5 lg:hover:bg-blue-900 rounded-sm px-7 py-3 ">
               <a
                 href="https://web.facebook.com/profile.php?id=61556235412055" target='_blank'
                 className="text-white capitalize flex items-center justify-between gap-4"
@@ -107,7 +108,8 @@ function Home (){
               our resource library is here to support your mental health
               journey.
             </p>
-            <button className="bg-green-900 my-5 lg:hover:bg-blue-900 px-4 py-2">
+            {/* px-4 py-2 */}
+            <button className="bg-green-900 my-5 lg:hover:bg-blue-900 rounded-sm px-7 py-3">
               <a
                 href="/library" target='_blank'
                 className="text-white flex items-center justify-between capitalize gap-4"
@@ -155,7 +157,8 @@ function Home (){
               awarness about mental health.Let&apos;s break the stigma join us
               today!!{" "}
             </p>
-            <button className="bg-green-900 my-5 lg:hover:bg-blue-900 px-4 py-2">
+            {/* px-4 py-2 */}
+            <button className="bg-green-900 my-5 rounded-sm lg:hover:bg-blue-900 px-7 py-3">
               <a
                 href="https://www.facebook.com/profile.php?id=61556235412055&mibextid=ZbWKwL" target='_blank'
                 className="text-white flex items-center justify-between gap-4"
@@ -202,7 +205,8 @@ function Home (){
           today!!!
         </p>
         <button
-          className="lg:cursor-pointer flex justify-center items-center gap-4 bg-[#1d3f39] my-5 p-3"
+          className="lg:cursor-pointer rounded-sm flex justify-center items-center gap-4 bg-[#1d3f39] my-5 px-7 py-3"
+          // p-3 
           onClick={() => setIsCard(true)}
         >
           <span className="text-white font-semibold">Donate Now</span>
