@@ -62,11 +62,12 @@ function Carousel() {
               className="absolute bg-no-repeat inset-0 bg-cover bg-center before:absolute before:inset-0 before:bg-gradient-to-b before:from-black/50 before:to-black/55"
               style={{ backgroundImage: `url('${slide.image}')` }}
             >
-              <div className="relative p-5 container md:left-8 lg:left-8 mx-auto my-20 lg:my-56 flex flex-col items-center md:items-start lg:items-start">
+              <div className="relative p-5 container md:left-8 lg:left-8 mx-auto my-20 lg:my-56 flex flex-col items-start">
+              {/* md:items-start lg:items-start */}
                 <h1 className="uppercase text-3xl md:text-5xl lg:text-7xl font-bold text-white">
                   {slide.heading}
                 </h1>
-                <div className="flex items-center mt-3 gap-5">
+                <div className="flex items-start mt-3 gap-5">
                   <button className="bg-[#88c040] rounded-2 px-7 py-3 lg:transition-all inline-block lg:hover:scale-90 ">
                     <a
                       href="https://www.facebook.com/profile.php?id=61556235412055&mibextid=ZbWKwL"
