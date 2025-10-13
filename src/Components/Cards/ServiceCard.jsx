@@ -1,11 +1,11 @@
 import {
-    suicide,
+    helping,
     eap,
-    counsel,
-    child_counsel,
+    brain,
+    marriage,
     pna,
     bm,
-    converse,
+    meditate,
     convert,
 } from "../../lib/Images";
 // import { LuSend } from "react-icons/lu";
@@ -22,18 +22,18 @@ const services = [
         desc: "Gain deep insights into your organization’s mental health landscape. Our audits assess psychological needs, identify gaps, and provide actionable strategies to foster a supportive, resilient environment for all.",
     },
     {
-        img: converse,
+        img: marriage,
         title: "Counseling & Therapy(individual & group)",
         desc: "Experience transformative change through personalized counseling and group therapy. We provide a safe, empathetic space to address emotional struggles, build coping skills, and nurture lasting mental wellness.",
     },
     {
-        img: counsel,
+        img: brain,
         title: "Cognitive-Behavioural Therapy",
         desc: "Break free from negative thought patterns with evidence-based CBT. Our therapists guide you to recognize, challenge, and replace unhelpful beliefs, leading to improved mood, behavior, and overall mental health.",
     },
 
     {
-        img: child_counsel,
+        img: meditate,
         title: "Dialectical Behavioural/REBT",
         desc: "Master emotional regulation and resilience with DBT and Rational Emotive Behavior Therapy. These approaches blend mindfulness, practical strategies, and cognitive restructuring to help you manage intense emotions and thrive.",
     },
@@ -45,7 +45,7 @@ const services = [
     },
 
     {
-        img: suicide,
+        img: helping,
         title: "Suicide Intervention",
         desc: "Receive immediate, compassionate support in times of crisis. Our suicide intervention services focus on safety planning, emotional stabilization, and addressing root causes to prevent self-harm and promote recovery.",
     },
@@ -60,19 +60,20 @@ function ServiceCard() {
     return (
         <div className="w-full px-2 py-8">
             <div
-                className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5"
+                className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-5 lg:gap-3
+                "
             >
                 {services.map((service, idx) => (
                     <div
                         key={idx}
-                        className="w-80 max-w-full min-h-[220px] bg-white rounded-3xl flex flex-col items-center overflow-hidden justify-start border-2 border-t-0 border-[#88c040] transition-all duration-500"
+                        className="lg:w-90 w-full max-w-full min-h-[220px] bg-white rounded-3xl flex flex-col items-center overflow-hidden justify-start border-2 border-[#88c040] transition-all duration-500"
                     >
-                                               <div className="w-full h-auto md:h-56 lg:h-52 overflow-hidden flex items-center justify-center border-lg border-green-500">
+                        <div className="w-full h-auto md:h-56 lg:h-52 overflow-hidden flex items-center justify-center border-lg border-green-500">
                             <img
                                 src={service.img}
                                 alt={service.title}
                                 loading="lazy"
-                                className="object-contain w-full h-full"
+                                className="object-contain object-top w-full h-full"
                             />
                         </div>
                         <h4 className="text-xl md:text-2xl lg:text-2xl text-center font-medium text-[#02514b] py-4 px-2 capitalize">

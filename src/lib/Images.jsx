@@ -10,3 +10,8 @@ export {default as suicide} from "../assets/suicide.avif";
 export {default as art} from "../assets/art.avif";
 export {default as eap} from "../assets/eap.svg";
 export {default as bm} from "../assets/bm.svg";
+export {default as therapist_img} from "../assets/therapist.avif";
+export {default as marriage} from "../assets/marriage.svg";
+export {default as meditate} from "../assets/meditate.svg";
+export {default as helping} from "../assets/helping.svg";
+export {default as brain} from "../assets/brain.svg";
