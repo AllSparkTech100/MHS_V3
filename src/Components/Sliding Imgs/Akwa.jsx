@@ -37,7 +37,7 @@ function Akwa() {
                         <div className="relative overflow-hidden rounded-lg shadow-md">
                             <img
                                 src={image.src}
-                                alt='Akwa-ibom Therapy'
+                                alt='Therapy'
                                 className="w-full h-64 lg:h-80  object-cover" loading="lazy"
                             />
                         </div>

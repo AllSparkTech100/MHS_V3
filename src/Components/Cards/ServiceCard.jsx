@@ -1,106 +1,98 @@
 import {
     suicide,
-    art, counsel,
+    art,
+    counsel,
     child_counsel,
     therapist_img,
     converse,
     convert,
 } from "../../lib/Images";
+// import { LuSend } from "react-icons/lu";
 
+const services = [
+    {
+        img: art,
+        title: "Employee Assistance Programs (EAPs)",
+        desc: "Empower your workforce with confidential support for personal and professional challenges. Our EAPs offer counseling, stress management, and resources to boost employee well-being, productivity, and workplace harmony.",
+    },
+    {
+        img: therapist_img,
+        title: "Psychological Needs Audits",
+        desc: "Gain deep insights into your organization’s mental health landscape. Our audits assess psychological needs, identify gaps, and provide actionable strategies to foster a supportive, resilient environment for all.",
+    },
+    {
+        img: converse,
+        title: "Counseling & Therapy(individual & group)",
+        desc: "Experience transformative change through personalized counseling and group therapy. We provide a safe, empathetic space to address emotional struggles, build coping skills, and nurture lasting mental wellness.",
+    },
+    {
+        img: counsel,
+        title: "Cognitive-Behavioural Therapy",
+        desc: "Break free from negative thought patterns with evidence-based CBT. Our therapists guide you to recognize, challenge, and replace unhelpful beliefs, leading to improved mood, behavior, and overall mental health.",
+    },
+
+    {
+        img: child_counsel,
+        title: "Dialectical Behavioural/REBT",
+        desc: "Master emotional regulation and resilience with DBT and Rational Emotive Behavior Therapy. These approaches blend mindfulness, practical strategies, and cognitive restructuring to help you manage intense emotions and thrive.",
+    },
+
+    {
+        img: therapist_img,
+        title: "Behavioural Modification",
+        desc: "Transform habits and behaviors for a healthier life. Our behavioral modification programs use proven reinforcement techniques and goal-setting to replace unhealthy patterns with positive, sustainable actions.",
+    },
+
+    {
+        img: suicide,
+        title: "Suicide Intervention",
+        desc: "Receive immediate, compassionate support in times of crisis. Our suicide intervention services focus on safety planning, emotional stabilization, and addressing root causes to prevent self-harm and promote recovery.",
+    },
+    {
+        img: convert,
+        title: "Psycho Education",
+        desc: "Empower yourself and your loved ones with knowledge. Our psychoeducation sessions cover mental health conditions, treatment options, and coping strategies, fostering understanding and proactive management of well-being.",
+    },
+];
 
 function ServiceCard() {
     return (
-        <>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 items-center lg:gap-y-10 gap-y-6 gap-x-4 p-4 lg:grid-cols-3">
-
-                <div className="h-64 lg:h-64 md:h-96 w-full object-center overflow-hidden rounded-lg">
-                    <img src={art} loading='lazy' className="object-cover w-full h-full" alt="Art Therapy" />
-                </div>
-                <div className="...">
-                    <h4 className="capitalize flex items-center gap-4 text-2xl lg:text-3xl font-semibold">
-                        art therapy
-                    </h4>
-                    <p className="mt-3 text-lg">
-                        A creative approach to mental health that uses art-making to explore emotions, reduce stress, and enhance self-awareness.
-                    </p>
-                </div>
-                {/* first */}
-                <div className="h-64 lg:h-64 md:h-96 w-full object-center overflow-hidden rounded-lg">
-                    <img src={counsel} loading="lazy" className="object-cover w-full h-full" alt="Cognitive Thearpy" />
-                </div>
-                <div className="...">
-                    <h4 className="capitalize flex items-center gap-4 text-2xl lg:text-3xl font-semibold  ">
-                        cognitive-behavioural therapy
-                    </h4>
-                    <p className="mt-3 text-lg">
-                        A structured, evidence-based therapy aimed at identifying and changing negative thought patterns and behaviours to improve emotional well-being.
-                    </p>
-                </div>
-                {/* second */}
-                <div className="h-64 lg:h-64 md:h-96 w-full object-center overflow-hidden rounded-lg">
-                    <img src={child_counsel} loading="lazy" className="object-cover object-top w-full h-full" alt="REBT" />
-                </div>
-                <div className="...">
-                    <h4 className="capitalize flex items-center gap-4 text-2xl lg:text-3xl  font-semibold  ">
-                        Dialectical behavioural/REBT
-                    </h4>
-                    <p className="mt-3 text-lg">
-                        A specialized form of therapy that combines mindfulness, emotional regulation, and practical strategies to address intense emotions and improve interpersonal skills.
-                    </p>
-                </div>
-                {/* third */}
-                <div className="h-64 lg:h-64 md:h-96 w-full object-center overflow-hidden rounded-lg">
-                    <img src={therapist_img} loading="lazy" className="object-top object-cover w-full h-full" alt="Behaviour Modification" />
-                </div>
-                <div className="...">
-                    <h4 className="capitalize flex items-center gap-4 text-2xl lg:text-3xl font-semibold  ">
-                        behavioural modification
-                    </h4>
-                    <p className="mt-3 text-lg">
-                        A therapy focused on replacing unhealthy behaviours with positive ones through reinforcement techniques and goal-setting.
-                    </p>
-                </div>
-                {/* fourth */}
-                <div className="h-64 lg:h-64 md:h-96 w-full object-center overflow-hidden rounded-lg">
-                    <img src={converse} loading="lazy" className="object-cover w-full h-full" alt="Counselling" />
-                </div>
-                <div className="...">
-                    <h4 className="capitalize flex items-center gap-4 text-2xl lg:text-3xl font-semibold  ">
-                        counselling
-                    </h4>
-                    <p className="mt-3 text-lg">
-                        A supportive process that provides a safe space for individuals to discuss their challenges, gain insight, and develop coping strategies.
-                    </p>
-                </div>
-                {/* fifth */}
-                <div className="h-64 lg:h-64 md:h-96 w-full object-center overflow-hidden rounded-lg">
-                    <img src={suicide} loading="lazy" className="object-cover w-full h-full" alt="Suicide Intervention" />
-                </div>
-                <div className="...">
-                    <h4 className="capitalize flex items-center gap-4 text-2xl lg:text-3xl font-semibold  ">
-                        suicide intervention
-                    </h4>
-                    <p className="mt-3 text-lg">
-                        Immediate and compassionate support aimed at preventing suicide by addressing underlying issues and creating a safety plan.
-                    </p>
-                </div>
-                {/* sixth */}
-                <div className="h-64 lg:h-64 md:h-96 w-full object-center overflow-hidden rounded-lg">
-                    <img src={convert} loading="lazy" className="object-cover w-full h-full" alt="Psycho Education" />
-                </div>
-                <div className="...">
-                    <h4 className="capitalize flex items-center gap-4 text-2xl lg:text-3xl font-semibold  ">
-                        psycho education
-                    </h4>
-                    <p className="mt-3 text-lg">
-                        Providing individuals and families with knowledge about mental health conditions, treatment options, and coping skills to promote understanding and recovery.
-                    </p>
-                </div>
-                {/* seventh */}
+        <div className="w-full px-2 py-8">
+            <div
+                className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5"
+            >
+                {services.map((service, idx) => (
+                    <div
+                        key={idx}
+                        className="w-80 max-w-full min-h-[220px] bg-white rounded-3xl flex flex-col items-center overflow-hidden justify-start border-2 border-t-0 border-[#88c040] transition-all duration-500"
+                    >
+                                               <div className="w-full h-auto md:h-56 lg:h-52 overflow-hidden flex items-center justify-center border-lg border-green-500">
+                            <img
+                                src={service.img}
+                                alt={service.title}
+                                loading="lazy"
+                                className="object-cover w-full h-full"
+                            />
+                        </div>
+                        <h4 className="text-xl md:text-2xl lg:text-2xl text-center font-medium text-[#02514b] py-4 px-2 capitalize">
+                            {service.title}
+                        </h4>
+                        <p className="text-base md:text-lg px-4 pb-6 text-left text-gray-700">
+                            {service.desc}
+                        </p>
+                        {/* <a
+                            href={`mailto:mentalhealthplus24@gmail.com?subject=Book%20Now%20-%20${encodeURIComponent(service.title)}`}
+                            className="flex items-center gap-4 mb-4 px-6 py-2 text-white rounded-lg font-semibold shadow bg-[#02514b] transition-colors duration-200"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <LuSend size={25} />Book Now
+                        </a> */}
+                    </div>
+                ))}
             </div>
-        </>
-    )
+        </div>
+    );
 }
 
 export default ServiceCard;

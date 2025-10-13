@@ -29,7 +29,7 @@ function ContactCard() {
           </div>
 
           <div className="h-full order-first lg:order-none md:order-none w-full">
-            <img src={work} alt="" className=" h-full w-full" />
+            <img src={work} alt="Yoga" className=" h-full w-full" />
           </div>
         </div>
       </div>

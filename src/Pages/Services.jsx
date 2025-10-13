@@ -1,5 +1,4 @@
 import ServiceCard from "../Components/Cards/ServiceCard";
-import { LuSend } from "react-icons/lu";
 
 function Services() {
 
@@ -18,17 +17,18 @@ function Services() {
         </div>
       </div>
 
+      {/* Description] */}
+      <div className="container mt-20 mx-auto p-4 h-auto text-center">
+        <p className='text-xl text-center'>
+          Mental Health Plus & Saner Ltd is a mental health company committed to bridging advocacy/awareness and mental health literacy with professional services aimed at continuously inspiring a widespread shift towards proactive mental health practices, Our services also involve delivering Employee Assistance Programs (EAPs), Counseling & Therapy(individual & group), Psychological Needs Audits, and Training for First Responders, helping individuals, workplaces, and communities access practical, evidence-based, person-centered and culturally relevant mental health solutions.
+        </p>
+      </div>
       <div className="container mt-20 mx-auto p-4 h-auto">
         <h3 className="uppercase underline font-bold text-lg lg:text-2xl">our services / intervention</h3>
         <div className="my-10">
           <ServiceCard />
         </div>
 
-        <div className="flex items-center justify-center">
-          <button type="submit" className="text-center p-4 bg-[#02514b] w-60 flex items-center justify-center gap-4 rounded-lg text-white lg:hover:scale-90 lg:transition-all ">
-            <a href="mailto:mentalhealthplus24@gmail.com" className='flex items-center justify-center gap-4'>  <LuSend size={25} />Book now</a>
-          </button>
-        </div>
       </div>
 
     </>
