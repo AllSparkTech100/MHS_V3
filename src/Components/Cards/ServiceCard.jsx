@@ -1,9 +1,10 @@
 import {
     suicide,
-    art,
+    eap,
     counsel,
     child_counsel,
-    therapist_img,
+    pna,
+    bm,
     converse,
     convert,
 } from "../../lib/Images";
@@ -11,12 +12,12 @@ import {
 
 const services = [
     {
-        img: art,
+        img: eap,
         title: "Employee Assistance Programs (EAPs)",
         desc: "Empower your workforce with confidential support for personal and professional challenges. Our EAPs offer counseling, stress management, and resources to boost employee well-being, productivity, and workplace harmony.",
     },
     {
-        img: therapist_img,
+        img: pna,
         title: "Psychological Needs Audits",
         desc: "Gain deep insights into your organization’s mental health landscape. Our audits assess psychological needs, identify gaps, and provide actionable strategies to foster a supportive, resilient environment for all.",
     },
@@ -38,7 +39,7 @@ const services = [
     },
 
     {
-        img: therapist_img,
+        img: bm,
         title: "Behavioural Modification",
         desc: "Transform habits and behaviors for a healthier life. Our behavioral modification programs use proven reinforcement techniques and goal-setting to replace unhealthy patterns with positive, sustainable actions.",
     },
@@ -71,7 +72,7 @@ function ServiceCard() {
                                 src={service.img}
                                 alt={service.title}
                                 loading="lazy"
-                                className="object-cover w-full h-full"
+                                className="object-contain w-full h-full"
                             />
                         </div>
                         <h4 className="text-xl md:text-2xl lg:text-2xl text-center font-medium text-[#02514b] py-4 px-2 capitalize">
