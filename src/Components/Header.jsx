@@ -54,13 +54,13 @@ function Header() {
             </nav>
           </div>
 
-<div className='flex gap-3 items-center'>
 
-</div>
-          <button className="px-7 py-3 hidden lg:block rounded-sm  bg-green-500">
-            <a href="mailto:mentalhealthplus24@gmail.com" className="text-white">Get Help </a>
-            <FaExternalLinkAlt size={20}/>
+ <button className=" px-7 py-3 hidden lg:block rounded-sm  bg-green-500">
+            <a href="mailto:mentalhealthplus24@gmail.com" className="flex items-center justify-between gap-3 text-white">Get Help  <FaExternalLinkAlt size={20}/> </a>
+          
           </button>
+           
+         
           <div className="flex items-center flex-row justify-center">
 
             <motion.button

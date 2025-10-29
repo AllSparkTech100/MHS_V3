@@ -49,11 +49,13 @@ const services = [
         title: "Suicide Intervention",
         desc: "Receive immediate, compassionate support in times of crisis. Our suicide intervention services focus on safety planning, emotional stabilization, and addressing root causes to prevent self-harm and promote recovery.",
     },
-    {
-        img: convert,
-        title: "Psycho Education",
-        desc: "Empower yourself and your loved ones with knowledge. Our psychoeducation sessions cover mental health conditions, treatment options, and coping strategies, fostering understanding and proactive management of well-being.",
-    },
+
+    // Still working
+    // {
+    //     img: convert,
+    //     title: "Psycho Education",
+    //     desc: "Empower yourself and your loved ones with knowledge. Our psychoeducation sessions cover mental health conditions, treatment options, and coping strategies, fostering understanding and proactive management of well-being.",
+    // },
 ];
 
 function ServiceCard() {
@@ -69,7 +71,7 @@ function ServiceCard() {
                         className="lg:w-90 w-full max-w-full min-h-[220px] bg-white rounded-3xl flex flex-col items-center overflow-hidden justify-start border-2 border-[#88c040] transition-all duration-500"
                     >
                     {/* */}
-                        <div className="w-full max-w-full h-auto md:h-56 lg:h-52 overflow-hidden flex items-center justify-center border-lg border-green-500">
+                        <div className="w-full h-auto md:h-56 lg:h-52 overflow-hidden flex items-center justify-center border-lg border-green-500">
                             <img
                                 src={service.img}
                                 alt={service.title}
