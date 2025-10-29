@@ -60,7 +60,7 @@ function ServiceCard() {
     return (
         <div className="w-full px-2 py-8">
             <div
-                className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-5 lg:gap-3
+                className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 lg:gap-3
                 "
             >
                 {services.map((service, idx) => (
@@ -68,12 +68,13 @@ function ServiceCard() {
                         key={idx}
                         className="lg:w-90 w-full max-w-full min-h-[220px] bg-white rounded-3xl flex flex-col items-center overflow-hidden justify-start border-2 border-[#88c040] transition-all duration-500"
                     >
-                        <div className="w-full h-auto md:h-56 lg:h-52 overflow-hidden flex items-center justify-center border-lg border-green-500">
+                    {/* */}
+                        <div className="w-full max-w-full h-auto md:h-56 lg:h-52 overflow-hidden flex items-center justify-center border-lg border-green-500">
                             <img
                                 src={service.img}
                                 alt={service.title}
                                 loading="lazy"
-                                className="object-contain object-top w-full h-full"
+                                className="object-contain object-top w-full h-auto"
                             />
                         </div>
                         <h4 className="text-xl md:text-2xl lg:text-2xl text-center font-medium text-[#02514b] py-4 px-2 capitalize">

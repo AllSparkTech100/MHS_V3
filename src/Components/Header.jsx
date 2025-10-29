@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { IoClose, IoMenuSharp } from "react-icons/io5";
+import { FaExternalLinkAlt } from "react-icons/fa";
 import { motion, AnimatePresence } from "framer-motion";
 
 
@@ -53,9 +54,12 @@ function Header() {
             </nav>
           </div>
 
+<div className='flex gap-3 items-center'>
 
+</div>
           <button className="px-7 py-3 hidden lg:block rounded-sm  bg-green-500">
             <a href="mailto:mentalhealthplus24@gmail.com" className="text-white">Get Help </a>
+            <FaExternalLinkAlt size={20}/>
           </button>
           <div className="flex items-center flex-row justify-center">
 
