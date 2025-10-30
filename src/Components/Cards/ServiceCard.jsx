@@ -96,7 +96,7 @@ function ServiceCard() {
                 ))}
             </div>
 
-            button.bg-green-500.text-white
+            {/* button.bg-green-500.text-white */}
         </div>
     );
 }
