@@ -5,6 +5,7 @@ export { default as doc_img } from "../assets/doctor.avif";
 export { default as pna } from "../assets/pna.svg";
 export { default as converse } from "../assets/converse.avif";
 export { default as convert } from "../assets/convert.avif";
+export { default as psycho } from "../assets/psycho.svg";
 export { default as work } from "../assets/work.svg";
 export {default as suicide} from "../assets/suicide.avif";
 export {default as art} from "../assets/art.avif";
