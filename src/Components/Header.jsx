@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { IoClose, IoMenuSharp } from "react-icons/io5";
+import { FaExternalLinkAlt } from "react-icons/fa";
 import { motion, AnimatePresence } from "framer-motion";
 
 
@@ -54,9 +55,12 @@ function Header() {
           </div>
 
 
-          <button className="px-7 py-3 hidden lg:block rounded-sm  bg-green-500">
-            <a href="mailto:mentalhealthplus24@gmail.com" className="text-white">Get Help </a>
+ <button className=" px-7 py-3 hidden lg:block rounded-sm  bg-green-500">
+            <a href="mailto:mentalhealthplus24@gmail.com" className="flex items-center justify-between gap-3 text-white">Get Help  <FaExternalLinkAlt size={20}/> </a>
+          
           </button>
+           
+         
           <div className="flex items-center flex-row justify-center">
 
             <motion.button
