@@ -8,7 +8,7 @@ import {
     meditate,
     psycho,
 } from "../../lib/Images";
-// import { LuSend } from "react-icons/lu";
+import { LuSend } from "react-icons/lu";
 
 const services = [
     {
@@ -84,20 +84,19 @@ function ServiceCard() {
                         <p className="text-base md:text-lg px-4 pb-6 text-left text-gray-700">
                             {service.desc}
                         </p>
-                        {/* <a
+                        <a
                             href={`mailto:mentalhealthplus24@gmail.com?subject=Book%20Now%20-%20${encodeURIComponent(service.title)}`}
                             className="flex items-center gap-4 mb-4 px-6 py-2 text-white rounded-lg font-semibold shadow bg-[#02514b] transition-colors duration-200"
                             target="_blank"
-                            rel="noopener noreferrer"
+                            // rel="noopener noreferrer"
                         >
                             <LuSend size={25} />Book Now
-                        </a> */}
+                        </a>
                     </div>
                 ))}
+                <button className="py-4 px-3 bg-green-500 border-0"></button>
             </div>
-
-            {/* button.bg-green-500.text-white */}
-        </div>
+        </div >
     );
 }
 
