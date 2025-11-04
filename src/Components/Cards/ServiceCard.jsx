@@ -67,34 +67,39 @@ function ServiceCard() {
                 {services.map((service, idx) => (
                     <div
                         key={idx}
-                        className="lg:w-90 w-full max-w-full min-h-[220px] bg-white rounded-3xl flex flex-col items-center overflow-hidden justify-start border-2 border-[#88c040] transition-all duration-500"
+                        className="lg:w-90 w-full max-w-full min-h-[320px] h-auto bg-white rounded-3xl flex flex-col items-center overflow-hidden justify-between border-2 border-[#88c040] transition-all duration-500 p-4"
                     >
-                        {/* relative top-10*/}
-                        <div className="w-full h-46 md:h-56 lg:h-52 overflow-hidden flex items-center justify-center border-lg border-green-500">
+                        {/* image + top content */}
+                        <div className="w-full h-46 md:h-56 lg:h-52 overflow-hidden flex items-center justify-center">
                             <img
                                 src={service.img}
                                 alt={service.title}
                                 loading="lazy"
-                                className="border-3 border-green-500 object-top w-full h-full"
+                                className=" object-top w-full h-full"
                             />
                         </div>
-                        <h4 className="text-xl md:text-2xl lg:text-2xl text-center font-medium text-[#02514b] py-4 px-2 capitalize">
-                            {service.title}
-                        </h4>
-                        <p className="text-base md:text-lg px-4 pb-6 text-left text-gray-700">
-                            {service.desc}
-                        </p>
-                        <a
-                            href={`mailto:mentalhealthplus24@gmail.com?subject=Book%20Now%20-%20${encodeURIComponent(service.title)}`}
-                            className="flex items-center gap-4 mb-4 px-6 py-2 text-white rounded-lg font-semibold shadow bg-[#02514b] transition-colors duration-200"
-                            target="_blank"
-                            // rel="noopener noreferrer"
-                        >
-                            <LuSend size={25} />Book Now
-                        </a>
+                        <div className="w-full flex-1 flex flex-col">
+                            <h4 className="text-xl md:text-2xl lg:text-2xl text-center font-medium text-[#02514b] py-4 px-2 capitalize">
+                                {service.title}
+                            </h4>
+                            <p className="text-base md:text-lg px-2 pb-4 text-left text-gray-700 flex-1">
+                                {service.desc}
+                            </p>
+                            <div className="w-full flex justify-center mt-4">
+                                <a
+                                    href={`mailto:mentalhealthplus24@gmail.com?subject=${encodeURIComponent(service.title)}`}
+                                    className="inline-flex items-center gap-3 mb-2 px-6 py-2 text-white rounded-lg font-semibold shadow bg-[#02514b] transition-colors duration-200"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    <LuSend size={18} />
+                                    Book a session
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 ))}
-                <button className="py-4 px-3 bg-green-500 border-0"></button>
+
             </div>
         </div >
     );
