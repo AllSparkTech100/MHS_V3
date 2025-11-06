@@ -14,8 +14,8 @@ export default function useScrollReveal(options = {}) {
     selector = '[data-animate]',
     start = 'top 85%',
     y = 30,
-    duration = 0.7,
-    stagger = 0.12,
+    duration = 0.4,
+    stagger = 0.11,
     ease = 'power2.out',
   } = options;
 
