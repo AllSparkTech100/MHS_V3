@@ -1,5 +1,5 @@
-import Resources from "../Components/Resources"
 
+import Resources from "../Components/Organization/Resources"
 
 function Library() {
   return (
@@ -11,7 +11,6 @@ function Library() {
               <h4 className=" uppercase text-center text-4xl lg:text-7xl font-bold">
                 our resources
               </h4>
-              
             </div>
           </div>
         </div>
@@ -19,7 +18,7 @@ function Library() {
       <div className="mt-40">
         <Resources />
       </div>
-     
+
     </>
   )
 }
