@@ -3,23 +3,18 @@ function Articles() {
     const Posts = [
         {
             title: "WHY DO SOME PEOPLE STRUGGLE WITH DEPENDENT PERSONALITY PATTERNS?",
-            text: "When you constantly fear being alone, struggle to make decisions without reassurance, or feel anxious at the thought of displeasing others, it might not just be “a soft heart.” It could be what clinicians call Dependent Personality Patterns (DPP) or, as a diagnosis, Dependent Personality Disorder (DPD)...............",
+            text: "When you constantly fear being alone, struggle to make decisions without reassurance, or feel anxious at the thought of displeasing others, it might not just be “a soft heart.” It could be what clinicians call Dependent Personality Patterns (DPP) or, as a diagnosis, Dependent Personality Disorder (DPD).",
             link: "https://medium.com/@mentalhealthispreservedwealth/why-do-some-people-struggle-with-dependent-personality-patterns-6f5b94da01f5"
         },
         {
-            title: "WHY DO SOME PEOPLE STRUGGLE WITH DEPENDENT PERSONALITY PATTERNS?",
-            text: "Our family dynamic has improved so much since working with . They helped us resolve long-standing conflicts and improve our communication.",
-            link: "https://medium.com/@mentalhealthispreservedwealth/why-do-some-people-struggle-with-dependent-personality-patterns-6f5b94da01f5"
+            title: "HOW DO I KNOW IF I HAVE WORKPLACE ANXIETY?",
+            text: "Workplace anxiety isn’t a diagnosis on its own, but it can show up as part of Generalized Anxiety Disorder (GAD), Social Anxiety Disorder, or even Panic Disorder, all depending on what triggers it and how it affects you.",
+            link: "https://medium.com/@mentalhealthispreservedwealth/how-do-i-know-if-i-have-workplace-anxiety-ea007c9f741e"
         },
         {
-            title: "WHY DO SOME PEOPLE STRUGGLE WITH DEPENDENT PERSONALITY PATTERNS?",
-            text: "Our family dynamic has improved so much since working with . They helped us resolve long-standing conflicts and improve our communication.",
-            link: "https://medium.com/@mentalhealthispreservedwealth/why-do-some-people-struggle-with-dependent-personality-patterns-6f5b94da01f5"
-        },
-        {
-            title: "WHY DO SOME PEOPLE STRUGGLE WITH DEPENDENT PERSONALITY PATTERNS?",
-            text: "Our family dynamic has improved so much since working with . They helped us resolve long-standing conflicts and improve our communication.",
-            link: "https://medium.com/@mentalhealthispreservedwealth/why-do-some-people-struggle-with-dependent-personality-patterns-6f5b94da01f5"
+            title: "WHEN DOES NORMAL SADNESS TURN INTO DEPRESSION?",
+            text: "Everyone gets sad because sadness is a normal, healthy human emotion. It helps us process what matters.But depression is different. Here’s how to tell the difference. Sadness says:",
+            link: "https://medium.com/@mentalhealthispreservedwealth/when-does-normal-sadness-turn-into-depression-ed43f96461f7"
         },
     ];
     return (
@@ -37,14 +32,24 @@ function Articles() {
                                     {items.title}
                                 </h4>
                                 <p className="text-base md:text-lg px-2 pb-4 text-left text-gray-700 flex-1">
-                                    {items.text}.......<a href={items.link} className="inline-flex items-center gap-3 mb-2  text-white rounded-lg font-semibold shadow bg-[#02514b] transition-colors duration-200 underline"
+                                    {items.text}.......<a href={items.link} className="inline-flex items-center gap-3 mb-2  text-blue-400  font-semibold shadow transition-colors duration-200 underline"
                                         target="_blank">Read More</a>
                                 </p>
-                        {/* px-6 py-2 */}
                             </div>
                         </div>
                     )
                 })}
+                <div className="w-full flex justify-center mt-4">
+                    <a
+                        href="https://medium.com/@mentalhealthispreservedwealth"
+                        className="inline-flex items-center gap-3 mb-2 px-6 py-2 text-white rounded-lg font-semibold shadow bg-[#02514b] transition-colors duration-200"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+
+                        View the Mental Health Journal
+                    </a>
+                </div>
             </div>
 
         </div>
