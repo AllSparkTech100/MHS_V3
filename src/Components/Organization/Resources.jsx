@@ -1,11 +1,11 @@
 import * as React from 'react';
-import Gallery from '../Gallery';
-// import Videos from './Videos';
+import Gallery from './Gallery';
 import PropTypes from 'prop-types';
 import SelarBooks from "./SelarBooks";
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Box from '@mui/material/Box';
+import Articles from './Articles';
 
 function Resources(props) {
   const { children, value, index, ...other } = props;
@@ -47,15 +47,14 @@ export default function BasicTabs() {
     <Box sx={{ width: '100%' }}>
       <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
         <Tabs value={value} onChange={handleChange} aria-label="basic tabs example" centered>
-          {/* <Tab label="Books" {...a11yProps(0)} /> */}
-          <Tab label="Articles" {...a11yProps(0)} />
+                    <Tab label="Articles" {...a11yProps(0)} />
           <Tab label="Gallery" {...a11yProps(1)} />
           <Tab label="Books" {...a11yProps(2)} />
         </Tabs>
       </Box>
 
       <Resources value={value} index={0}>
-        {/* <Videos /> */}
+        <Articles />
       </Resources>
       <Resources value={value} index={1}>
         <Gallery />
