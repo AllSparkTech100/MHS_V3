@@ -1,3 +1,4 @@
+import useScrollReveal from "../../hooks/useScrollReveal";
 import {
     helping,
     eap,
@@ -58,14 +59,15 @@ const services = [
 ];
 
 function ServiceCard() {
+    useScrollReveal();
     return (
         <div className="w-full px-2 py-8">
-            <div
+            <div 
                 className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-3
                 "
             >
                 {services.map((service, idx) => (
-                    <div
+                    <div data-animate
                         key={idx}
                         className="lg:w-90 w-full max-w-full min-h-[320px] h-auto bg-white rounded-3xl flex flex-col items-center overflow-hidden justify-between border-2 border-[#88c040] transition-all duration-500 p-4"
                     >
