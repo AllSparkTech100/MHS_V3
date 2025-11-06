@@ -39,19 +39,19 @@ function Articles() {
                         </div>
                     )
                 })}
-                <div className="w-full flex justify-center mt-4">
-                    <a
-                        href="https://medium.com/@mentalhealthispreservedwealth"
-                        className="inline-flex items-center gap-3 mb-2 px-6 py-2 text-white rounded-lg font-semibold shadow bg-[#02514b] transition-colors duration-200"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
 
-                        View the Mental Health Journal
-                    </a>
-                </div>
             </div>
+            <div className="w-full flex mx-auto justify-center mt-4 lg:mt-30 md:mt-20">
+                <a
+                    href="https://medium.com/@mentalhealthispreservedwealth"
+                    className="inline-flex items-center gap-3 mb-2 px-6 py-2 text-white rounded-lg font-semibold shadow bg-[#02514b] transition-colors duration-200"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
 
+                    View the Mental Health Journal
+                </a>
+            </div>
         </div>
     )
 }
