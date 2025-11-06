@@ -2,10 +2,12 @@ import { dir_img } from "../lib/Images";
 import { FaSearch, FaRegCircle, FaUserFriends } from "react-icons/fa";
 import { BsChatSquareDotsFill } from "react-icons/bs";
 import Frequent from '../Components/Frequent';
+import useScrollReveal from '../hooks/useScrollReveal';
 
 
 
 function About() {
+  useScrollReveal()
   return (
     <>
       <div className="relative h-80 md:h-[35rem] lg:h-[30rem]">

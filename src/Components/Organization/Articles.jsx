@@ -1,5 +1,7 @@
+import useScrollReveal from "../../hooks/useScrollReveal";
 
 function Articles() {
+    useScrollReveal();
     const Posts = [
         {
             title: "WHY DO SOME PEOPLE STRUGGLE WITH DEPENDENT PERSONALITY PATTERNS?",
@@ -19,10 +21,10 @@ function Articles() {
     ];
     return (
         <div className="container mx-auto h-full px-4 py-5">
-            <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-3 gap-4">
+            <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-4">
                 {Posts.map((items, index) => {
                     return (
-                        <div
+                        <div data-animate
                             key={index}
                             className="lg:w-90 w-full max-w-full min-h-[320px] h-auto bg-white rounded-3xl flex flex-col items-center overflow-hidden justify-between border-2 border-[#88c040] shadow-lg transition-all duration-500 p-4"
                         >
@@ -32,9 +34,12 @@ function Articles() {
                                     {items.title}
                                 </h4>
                                 <p className="text-base md:text-lg px-2 pb-4 text-left text-gray-700 flex-1">
-                                    {items.text}.......<a href={items.link} className="inline-flex items-center gap-3 mb-2  text-blue-400  font-semibold shadow transition-colors duration-200 underline"
-                                        target="_blank">Read More</a>
+                                    {items.text}
                                 </p>
+                                <span className="text-center text-blue-500 mx-auto mt-5">
+                                    <a href={items.link} className="font-medium transition-colors duration-200 underline "
+                                        target="_blank">Read More</a>
+                                </span>
                             </div>
                         </div>
                     )

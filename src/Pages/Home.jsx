@@ -7,6 +7,7 @@ import {
   convert,
 } from "../lib/Images";
 import { useState } from "react";
+import useScrollReveal from '../hooks/useScrollReveal';
 import { FaArrowCircleRight, FaDonate } from "react-icons/fa";
 import Feedback from "../Components/Feedback";
 import Frequent from "../Components/Frequent";
@@ -17,6 +18,8 @@ import { Modal } from "../Components/Modal";
 function Home (){
 
   const [isCard, setIsCard] = useState(false);
+  // apply the shared scroll reveal hook; options can be customized per page
+  useScrollReveal();
   return (
     <>
       {/* Hero Carousel */}
@@ -24,7 +27,7 @@ function Home (){
       <Carousel/>
 
       {/* Description */}
-      <div className="flex mt-20 lg:mt-40 text-black flex-col md:flex-row lg:flex-row items-center justify-center gap-8 w-full h-auto px-8 py-12">
+      <div data-animate className="flex mt-20 lg:mt-40 text-black flex-col md:flex-row lg:flex-row items-center justify-center gap-8 w-full h-auto px-8 py-12">
         <div className="flex-1 my-8">
           <p className="font-normal">
             Mental Health and Saner Ltd is dedicated to promoting mental
@@ -49,7 +52,7 @@ function Home (){
       </div>
 
       {/* Events */}
-      <section className="mt-20 lg:mt-40 p-5">
+  <section data-animate className="mt-20 lg:mt-40 p-5">
         <div className="grid grid-cols-1 items-center gap-8 lg:grid-cols-3 md:grid-cols-2">
           <div className="my-5">
             <h3 className="text-left mb-4 text-[#1d3f39] md:mb-8 capitalize text-2xl font-bold">
@@ -95,7 +98,7 @@ function Home (){
       </section>
 
       {/* Resources */}
-      <section className="mt-20 lg:mt-40 p-5 lg:p-12">
+  <section data-animate className="mt-20 lg:mt-40 p-5 lg:p-12">
         <div className="grid grid-cols-1 items-center lg:flex-row-reverse gap-6 lg:grid-cols-3 md:grid-cols-2">
           <div className="my-5 lg:order-last">
             <h3 className="text-left text-[#1d3f39] mb-4 md:mb-8 capitalize text-2xl font-bold">
@@ -143,7 +146,7 @@ function Home (){
       </section>
 
       {/* Conversation */}
-      <section className="mt-20 lg:mt-40 p-5 lg:p-12">
+  <section data-animate className="mt-20 lg:mt-40 p-5 lg:p-12">
         <div className="grid grid-cols-1 items-center gap-6 lg:grid-cols-3 md:grid-cols-2">
           <div className="my-5">
             <h3 className="text-left text-[#1d3f39] mb-4 md:mb-8 capitalize text-2xl font-bold">
@@ -191,8 +194,8 @@ function Home (){
         </div>
       </section>
 
-      {/* Donation */}
-      <div className="container-full items-center justify-center text-[#1d3f39]  mt-32 p-4 text-center flex flex-col gap-6 lg:p-24">
+  {/* Donation */}
+  <div data-animate className="container-full items-center justify-center text-[#1d3f39]  mt-32 p-4 text-center flex flex-col gap-6 lg:p-24">
         <h3 className="text-left mt-12 mb-3 md:mb-8 capitalize text-2xl font-bold lg:text-4xl">
           Donate
         </h3>
@@ -219,16 +222,18 @@ function Home (){
         </Modal>
       </div>
 
-      <section className="mt-40 lg:mt-72">
+  <section data-animate className="mt-40 lg:mt-72">
         <h3 className="text-left ms-4 text-2xl mb-16 font-bold capitalize text-black">
           testimonies
         </h3>
         <Feedback />
       </section>
 
-      <div >
+      <div data-animate>
         <Frequent />
       </div>
+
+      
 
     </>
   );

@@ -1,5 +1,6 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
+import gsap from 'gsap';
 
 
 function Carousel() {
@@ -41,6 +42,90 @@ function Carousel() {
     return () => clearInterval(interval);
   }, [heroSlides.length]);
 
+  const slideRefs = useRef([]);
+
+  // Split heading text into character spans for wave animation (run once)
+  useEffect(() => {
+    slideRefs.current.forEach((slideEl) => {
+      if (!slideEl) return;
+      const h = slideEl.querySelector('h1');
+      if (!h) return;
+      if (h.dataset.split === 'true') return; // already processed
+
+      const frag = document.createDocumentFragment();
+
+      // iterate original child nodes so we preserve <br/> and original breaks
+      slideEl.querySelectorAll('h1').forEach(() => {}); // noop to satisfy some browsers
+      const nodes = Array.from(h.childNodes);
+      nodes.forEach((node) => {
+        if (node.nodeType === Node.ELEMENT_NODE && node.nodeName === 'BR') {
+          frag.appendChild(document.createElement('br'));
+          return;
+        }
+        // text node
+        const text = node.nodeValue || (node.textContent || '');
+        const chars = Array.from(text);
+        chars.forEach((ch) => {
+          if (ch === '\n') {
+            frag.appendChild(document.createElement('br'));
+            return;
+          }
+          const span = document.createElement('span');
+          span.textContent = ch === ' ' ? '\u00A0' : ch; // preserve spaces
+          span.style.display = 'inline-block';
+          span.style.opacity = '0';
+          frag.appendChild(span);
+        });
+      });
+
+      // replace content while keeping same element
+      h.innerHTML = '';
+      h.appendChild(frag);
+      h.dataset.split = 'true';
+
+      // set initial state for spans
+      const spans = h.querySelectorAll('span');
+      spans.forEach((s) => {
+        s.style.opacity = '0';
+        s.style.transform = 'translateY(30px)';
+      });
+    });
+  }, []);
+
+  // Run wave animation when currentSlide changes
+  useEffect(() => {
+    const slideEl = slideRefs.current[currentSlide];
+    if (!slideEl) return;
+    const h = slideEl.querySelector('h1');
+    if (!h) return;
+    const spans = Array.from(h.querySelectorAll('span'));
+    if (spans.length === 0) return;
+
+    // Reset all spans on other slides quickly
+    slideRefs.current.forEach((sEl, idx) => {
+      if (!sEl) return;
+      const otherH = sEl.querySelector('h1');
+      if (!otherH) return;
+      if (idx !== currentSlide) {
+        gsap.set(otherH.querySelectorAll('span'), { opacity: 0, y: 0 });
+      }
+    });
+
+    gsap.killTweensOf(spans);
+    // wave-like stagger from center
+    gsap.fromTo(
+      spans,
+      { y: 30, opacity: 0 },
+      {
+        y: 0,
+        opacity: 1,
+        duration: 0.7,
+        ease: 'back.out(1.7)',
+        stagger: { each: 0.02, from: 'center' },
+      }
+    );
+  }, [currentSlide]);
+
   const nextSlide = () => {
     setCurrentSlide((prev) => (prev + 1) % heroSlides.length);
   };
@@ -55,6 +140,7 @@ function Carousel() {
         {heroSlides.map((slide, idx) => (
           <div
             key={idx}
+            ref={(el) => (slideRefs.current[idx] = el)}
             className={`absolute inset-0 transition-opacity duration-700 ease-in-out ${idx === currentSlide ? "opacity-100 z-10" : "opacity-0 z-0 pointer-events-none"
               }`}
           >
