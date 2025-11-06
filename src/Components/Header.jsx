@@ -55,7 +55,7 @@ function Header() {
           </div>
 
 
- <button className=" px-7 py-3 hidden lg:block rounded-sm  bg-green-500">
+ <button className=" px-7 py-3 hidden lg:block rounded-sm  bg-[#02514b]">
             <a href="mailto:mentalhealthplus24@gmail.com" className="flex items-center justify-between gap-3 text-white">Get Help  <FaExternalLinkAlt size={20}/> </a>
           
           </button>
@@ -98,9 +98,8 @@ function Header() {
                       <li className="md:mt-7"><a href="/services">Our Services</a></li>
                       <li className="md:mt-7"> <a href="/library"> Library</a></li>
                     </ul>
-                    <button className="mt-3 md:mt-12 text-center text-black bg-white rounded-lg w-full p-3 place-items-center">
+                    <button className="mt-3 md:mt-12 text-center text-white bg-[#02514b] rounded-lg w-full p-3 place-items-center">
                       <a href="mailto:mentalhealthplus24@gmail.com">Book a Session</a>
-
                     </button>
                   </nav>
                 </div>
