@@ -51,6 +51,8 @@ function Home (){
         </div>
       </div>
 
+
+
       {/* Events */}
   <section data-animate className="mt-20 lg:mt-40 p-5">
         <div className="grid grid-cols-1 items-center gap-8 lg:grid-cols-3 md:grid-cols-2">
