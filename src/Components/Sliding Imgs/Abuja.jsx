@@ -1,7 +1,4 @@
-import { Splide, SplideSlide } from "@splidejs/react-splide";
-import "@splidejs/react-splide/css";
-
-
+import React from "react";
 
 function Abuja() {
 
@@ -24,43 +21,36 @@ function Abuja() {
         { src: "/Abjt/aj16.webp" },
     ];
 
+    // Use uniform responsive Tailwind classnames per item (no span constants)
 
     return (
-        <div className="w-full mx-auto py-10">
-            <Splide
-                options={{
-                    type: "loop",
-                    perPage: 2,
-                    gap: "1rem",
-                    autoplay: true,
-                    focus: "center",
-                    interval: 2000,
-                    pagination: false,
-                    lazyLoading: "sequential",
-                    breakpoints: {
-                        1024: { perPage: 2 },
-                        640: { perPage: 1 },
-                    },
-                }}>
+        <div className="max-w-7xl mx-auto py-10 px-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                {images.map((image, i) => {
+                    const itemClass =
+                        i === 0
+                            ? "relative overflow-hidden rounded-lg shadow-md col-span-1 sm:col-span-2 md:col-span-3 lg:col-span-3 h-64 sm:h-80 md:h-96"
+                            : i === 2 || i === 9
+                            ? "relative overflow-hidden rounded-lg shadow-md col-span-1 md:col-span-2 h-56 md:h-72"
+                            : i === 5 || i === 6
+                            ? "relative overflow-hidden rounded-lg shadow-md col-span-1 sm:col-span-2 h-60 md:h-80"
+                            : "relative overflow-hidden rounded-lg shadow-md h-48 sm:h-56 md:h-64";
 
-                {images.map((image) => (
-                    <SplideSlide key={image.id}>
-                        <div className="relative overflow-hidden rounded-lg shadow-md">
+                    return (
+                        <div key={image.src} className={itemClass}>
                             <img
                                 src={image.src}
-                                alt='Therapy'
-                                className="w-full h-64 lg:h-80 object-cover" loading="lazy"
+                                alt={`Abuja ${i + 1}`}
+                                loading="lazy"
+                                className="w-full h-full object-cover"
                             />
                         </div>
-                    </SplideSlide>
-                ))}
-            </Splide>
+                    );
+                })}
+            </div>
 
-            <h4 className="capitalize text-lg my-7 text-center font-bold">
-                Abuja art Therapy
-            </h4>
         </div>
-    )
+    );
 }
 
-export default Abuja
+export default Abuja;

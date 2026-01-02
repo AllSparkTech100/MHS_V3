@@ -37,7 +37,7 @@ function Header() {
       <header className={`sticky top-0 z-[9999] bg-transparent text-black transition-all duration-300 ${isScrolled ? 'backdrop-blur-lg shadow-b-lg bg-opacity-80 supports-[backdrop-filter] : bg-white/80' : ''}`}>
         <div className="flex gap-5 justify-between h-20 items-center p-4 lg:p-2">
 
-          <img href='/' src="/mhslogo.webp" alt="Mental Health Plus and Saner Limited" loading='lazy' className="w-15 h-10 lg:ml-4" />
+          <img href='/' src="/mhslogo.webp" alt="Mental Health Plus and Saner Limited" loading='lazy' className="w-24 h-10 lg:ml-4" />
 
           <div className="mx-auto text-[#88c040]">
             <nav
