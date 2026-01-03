@@ -112,12 +112,9 @@ function Footer() {
         <hr className="my-4 bg-[#1d3f39]" />
         <div className="flex flex-col md:flex-row lg:flex-row justify-between items-center">
           <div className="my-8 md:my-0 lg:my-5 text-center">
-            <h5 className=" text-gray-400">
+            <h5 className=" text-gray-400 text-center">
               &copy; {year} Mental Health Plus and Saner LTD
             </h5>
-          </div>
-          <div className='text-center '>
-            <span className="text-white ">Designed with ❤ by Eikasia (AllSpark) Technologies  </span>
           </div>
         </div>
       </div>

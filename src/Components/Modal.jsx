@@ -82,7 +82,7 @@ export function Modal({ open, onClose, children }) {
   if (!open) return null;
   return (
     <div onClick={onClose} className="lg:cursor-pointer fixed inset-0 z-[99999] flex items-center justify-center bg-black/50">
-      <div className="bg-white rounded-lg h-72 shadow-lg p-6 relative max-w-82 w-full mx-4">
+      <div className="bg-white rounded-lg h-72 shadow-lg p-6 relative w-[100px] lg:w-full mx-4">
         <button
           onClick={onClose}
           className="absolute top-2 right-2 text-gray-600 hover:text-red-500 text-2xl font-bold"

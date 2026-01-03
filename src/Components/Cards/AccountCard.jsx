@@ -28,7 +28,7 @@ function AccountCard() {
         <div className="w-full p-4 border h-60 border-gray-300 shadow-md rounded-xl bg-white text-black">
             <h2 className="text-xl font-semibold text-center mb-4">Bank Account Details</h2>
             <div className="my-3 flex items-center justify-between">
-                <span className="font-medium text-blue-500">Account Number:</span>
+                <span className="font-medium  text-blue-500">Account Number:</span>
                 <span className="text-lg font-bold">{number}</span>
                 <button onClick={numberCopy} className="ml-2 text-gray-600 hover:text-gray-900">
                     <FaRegCopy size={20} />
