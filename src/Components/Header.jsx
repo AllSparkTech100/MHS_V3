@@ -41,7 +41,7 @@ function Header() {
 
           <div className="mx-auto text-[#88c040]">
             <nav
-              className="hidden md:hidden lg:block sm:block basis-1/2 sm:text-lg text-xl"
+              className="hidden md:hidden lg:block basis-1/2 sm:text-lg text-xl"
               aria-label="main">
               {" "}
               <ul className="flex uppercase font-medium items-center gap-5">
@@ -55,17 +55,16 @@ function Header() {
           </div>
 
 
- <button className=" px-7 py-3 hidden lg:block rounded-sm  bg-[#02514b]">
-            <a href="/contact" className="flex items-center justify-between gap-3 text-white">Get Help  <FaExternalLinkAlt size={20}/> </a>
-          
+          <button className=" px-7 py-3 hidden lg:block rounded-sm  bg-[#02514b]">
+            <a href="/contact" className="flex items-center justify-between gap-3 text-white">Get Help  <FaExternalLinkAlt size={20} /> </a>
           </button>
-           
-         
+
+
           <div className="flex items-center flex-row justify-center">
 
             <motion.button
               onClick={menuToggle}
-              className="text-2xl text-black md:block lg:hidden sm:hidden focus:outline-none"
+              className="text-2xl text-black md:block lg:hidden focus:outline-none"
               animate={{ rotate: isMenu ? 90 : 0, scale: isMenu ? 1.2 : 1 }}
               transition={{ type: "spring", stiffness: 300, damping: 20 }}
             >
@@ -79,7 +78,7 @@ function Header() {
               animate={{ x: 0 }}
               exit={{ x: "-100%" }}
               transition={{ type: "spring", stiffness: 300, damping: 30, delay: 0.5 }}
-              className="sm:hidden md:block lg:hidden min-h-screen fixed w-full text-white fill-transparent bg-emerald-950/85 transition-colors ease-linear duration-100"
+              className=" md:block lg:hidden min-h-screen fixed w-full text-white fill-transparent bg-emerald-950/85 transition-colors ease-linear duration-100"
               onClick={menuToggle}>
               <motion.div initial={{ x: -100, opacity: 0 }}
                 animate={{ x: 0, opacity: 1 }}
@@ -99,7 +98,7 @@ function Header() {
                       <li className="md:mt-7"> <a href="/library"> Library</a></li>
                     </ul>
                     <button className="mt-3 md:mt-12 text-center text-white bg-[#02514b] rounded-lg w-full p-3 place-items-center">
-                      <a href="/contact">Book a Session</a>
+                      <a href="/contact" className="flex items-center justify-between gap-3 text-white">Get Help  <FaExternalLinkAlt size={20} /> </a>
                     </button>
                   </nav>
                 </div>

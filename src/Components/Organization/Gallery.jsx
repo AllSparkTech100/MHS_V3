@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from "react";
+import { IoClose } from "react-icons/io5";
 import Abuja from "../Sliding Imgs/Abuja";
 import PHC from "../Sliding Imgs/PHC";
 import Akwa from "../Sliding Imgs/Akwa";
 
 const items = [
-  { id: "abuja", name: "Abuja Therapy", Component: Abuja, thumb: "/Abjt/aj2.webp" },
-  { id: "phc", name: "Port Harcourt Therapy", Component: PHC, thumb: "/pha/ph2.webp" },
-  { id: "akwa", name: "Akwa Ibom Therapy", Component: Akwa, thumb: "/akw/ak2.webp" },
+  { id: "abuja", name: "Abuja Art Therapy", Component: Abuja, thumb: "/Abjt/aj2.webp" },
+  { id: "phc", name: "Port Harcourt Art Therapy", Component: PHC, thumb: "/pha/ph2.webp" },
+  { id: "akwa", name: "Akwa Ibom Art Therapy", Component: Akwa, thumb: "/akw/ak2.webp" },
 ];
 
 function Gallery() {
@@ -33,7 +34,7 @@ function Gallery() {
 
   return (
     <section className="max-w-7xl mx-auto px-4 py-10">
-      <h2 className="text-2xl font-semibold mb-6 text-center">Gallery</h2>
+      {/* <h2 className="text-2xl font-semibold mb-6 text-center">Gallery</h2> */}
 
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
         {items.map((item) => (
@@ -74,15 +75,15 @@ function Gallery() {
         >
           <div className="absolute inset-0 bg-black/60" onClick={closeModal} />
 
-          <div className="relative z-10 w-full max-w-5xl max-h-[calc(100vh-5rem)] mx-4 overflow-y-auto bg-white rounded-lg shadow-2xl">
+          <div className=" relative z-10 w-full max-w-5xl max-h-[calc(100vh-5rem)] mx-4 overflow-y-auto bg-white rounded-lg shadow-2xl">
             <div className="flex items-center justify-between p-4 border-b">
-              <h3 className="text-lg font-semibold">{active.name} Gallery</h3>
+              <h3 className="text-lg font-semibold">{active.name}</h3>
               <button
                 onClick={closeModal}
-                className="text-gray-700 hover:text-gray-900 rounded focus:outline-none focus:ring"
+                className="text-gray-700 lg:cursor-pointer focus:outline-none"
                 aria-label="Close gallery modal"
               >
-                Close
+                <IoClose size={20} />
               </button>
             </div>
 

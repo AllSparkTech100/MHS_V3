@@ -40,7 +40,7 @@ function Footer() {
                 </a>
               </div>
               <div className="rounded-full lg:h-10 lg:w-10 h-8 w-8 flex items-center justify-center p-2 md:p-4 lg:p-4 text-[#1d3f39] bg-[#88c040] ">
-              {/* bg-slate-800 */}
+                {/* bg-slate-800 */}
                 <a href="https://www.instagram.com/cognitherapist/" target="_blank" className=''>
                   <FaInstagram size={20} />
                 </a>
@@ -110,12 +110,10 @@ function Footer() {
 
 
         <hr className="my-4 bg-[#1d3f39]" />
-        <div className="flex flex-col md:flex-row lg:flex-row justify-between items-center">
-          <div className="my-8 md:my-0 lg:my-5 text-center">
-            <h5 className=" text-gray-400 text-center">
-              &copy; {year} Mental Health Plus and Saner LTD
-            </h5>
-          </div>
+        <div className="my-8 md:my-0 lg:my-5 text-center">
+          <h5 className=" text-gray-400 text-center">
+            &copy; {year} Mental Health Plus and Saner LTD
+          </h5>
         </div>
       </div>
     </>
