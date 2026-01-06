@@ -17,7 +17,7 @@ function Footer() {
       <div className="h-full p-10 md:p-8 lg:p-12 mt-60 bg-[#1d3f39] ">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 lg:gap-5 md:grid-cols-2">
           <div className=" my-4">
-            <h2 className="text-white text-lg lg:text-2xl font-medium uppercase">
+            <h2 className="text-white text-lg lg:text-2xl font-bold uppercase">
               mental health <br /> plus &amp; saner limited
             </h2>
             <p className="mt-2 mb-3 text-white text-lg sentence">
@@ -47,15 +47,19 @@ function Footer() {
               </div>
             </div>
           </div>
-          {/*  */}
+          {/* Opening Hours */}
           <div className="my-4 text-white">
             <h4 className="uppercase text-lg lg:text-2xl font-bold">
               open hours
             </h4>
             <ul className="list-none">
-              <li className="text-lg my-4 capitalize lg:text-xl">
-                mondays - saturday
-              </li>
+              <li className="text-lg italic font-normal my-2 capitalize lg:text-xl">Monday - 10AM - 2PM</li>
+              <li className="text-lg italic font-normal my-2 capitalize lg:text-xl">tuesday - 10AM - 2PM</li>
+              <li className="text-lg italic font-normal my-2 capitalize lg:text-xl">wednesday - 10AM - 2PM</li>
+              <li className="text-lg italic font-normal my-2 capitalize lg:text-xl">thursday - 10AM - 2PM</li>
+              <li className="text-lg italic font-normal my-2 capitalize lg:text-xl">friday - 10AM - 2PM</li> 
+            </ul>
+            <ul className="mt-5">
               <li className="text-lg my-4 capitalize lg:text-xl">
                 scheduled appointments
               </li>
@@ -73,19 +77,19 @@ function Footer() {
             </h4>
             <ul className="list-none capitalize">
               <li className="text-lg my-4  lg:text-xl">
-                <a href="/">home</a>
+                <a href="/" className="transition duration-200 ease-out hover:underline hover:underline-offset-4">home</a>
               </li>
               <li className="text-lg my-4 lg:text-xl">
-                <a href="/about">about us</a>
+                <a href="/about" className="transition duration-200 ease-out hover:underline hover:underline-offset-4">about us</a>
               </li>
               <li className="text-lg my-4 lg:text-xl">
-                <a href="/contact">contact us</a>
+                <a href="/contact" className="transition duration-200 ease-out hover:underline hover:underline-offset-4">contact us</a>
               </li>
               <li className="text-lg my-4 lg:text-xl">
-                <a href="/services">our services</a>
+                <a href="/services" className="transition duration-200 ease-out hover:underline hover:underline-offset-4">our services</a>
               </li>
               <li className="text-lg my-4 lg:text-xl">
-                <a href="/library">library</a>
+                <a href="/library" className="transition duration-200 ease-out hover:underline hover:underline-offset-4">library</a>
               </li>
             </ul>
 
