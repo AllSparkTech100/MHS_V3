@@ -160,24 +160,24 @@ function Home (){
               for inspiring stories, expert tips and community support .
               together, we can foster a supportive environment and raise
               awarness about mental health.Let&apos;s break the stigma join us
-              today!!{" "}
+              today!!
             </p>
-            {/* px-4 py-2 */}
+            
             <button className="bg-green-900 my-5 rounded-sm lg:hover:bg-blue-900 px-7 py-3">
               <a
                 href="https://www.facebook.com/profile.php?id=61556235412055&mibextid=ZbWKwL" target='_blank'
                 className="text-white flex items-center justify-between gap-4"
               >
-                Follow Us On{" "}
+                Follow Us
                 <span>
                   <FaArrowCircleRight size={20} />
-                </span>{" "}
+                </span>
               </a>
             </button>
           </div>
 
           <div className="h-80 order-first md:order-none lg:order-none">
-            {" "}
+
             <img
               src={converse}
               alt="Image of people discussing"
