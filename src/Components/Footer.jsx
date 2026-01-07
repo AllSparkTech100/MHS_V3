@@ -14,10 +14,10 @@ function Footer() {
   }, []);
   return (
     <>
-      <div className="h-full p-10 md:p-8 lg:p-12 mt-60 bg-[#1d3f39] ">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 lg:gap-5 md:grid-cols-2">
+      <div className="h-full lg:h-[30rem] p-10 md:p-8 lg:p-12 mt-60 bg-[#1d3f39] ">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 lg:gap-4 md:grid-cols-2">
           <div className=" my-4">
-            <h2 className="text-white text-lg lg:text-2xl font-medium uppercase">
+            <h2 className="text-white text-lg lg:text-xl font-bold uppercase">
               mental health <br /> plus &amp; saner limited
             </h2>
             <p className="mt-2 mb-3 text-white text-lg sentence">
@@ -47,59 +47,63 @@ function Footer() {
               </div>
             </div>
           </div>
-          {/*  */}
+          {/* Opening Hours */}
           <div className="my-4 text-white">
-            <h4 className="uppercase text-lg lg:text-2xl font-bold">
+            <h4 className="uppercase text-lg lg:text-xl font-bold">
               open hours
             </h4>
-            <ul className="list-none">
-              <li className="text-lg my-4 capitalize lg:text-xl">
-                mondays - saturday
-              </li>
-              <li className="text-lg my-4 capitalize lg:text-xl">
+            <ul className="mt-5 mb-4 list-disc">
+              <li className="text-md my-4 capitalize lg:text-md">
                 scheduled appointments
               </li>
-              <li className="text-lg my-4 capitalize lg:text-xl">
+              <li className="text-md my-4 capitalize lg:text-md">
                 online bookings
               </li>
 
             </ul>
-
+            {/* Working days and time */}
+            <ul className="list-none -ms-4">
+              <li className="text-md my-4  lg:text-md italic font-normal capitalize flex items-center gap-4"><span className="text-md font-medium">-</span>Monday - 10AM - 2PM</li>
+              <li className="text-md  my-4 lg:text-md italic font-normal capitalize flex items-center gap-4"><span className="text-md font-medium">-</span>tuesday - 10AM - 2PM</li>
+              <li className="text-md  my-4 lg:text-md italic font-normal capitalize flex items-center gap-4"><span className="text-md font-medium">-</span>wednesday - 10AM - 2PM</li>
+              <li className="text-md  my-4 lg:text-md italic font-normal capitalize flex items-center gap-4"><span className="text-md font-medium">-</span>thursday - 10AM - 2PM</li>
+              <li className="text-md  my-4 lg:text-md italic font-normal capitalize flex items-center gap-4"><span className="text-md font-medium">-</span>friday - 10AM - 2PM</li>
+            </ul>
           </div>
           {/* links */}
           <div className="my-4 text-white">
-            <h4 className="uppercase text-lg lg:text-2xl font-bold">
+            <h4 className="uppercase text-lg lg:text-xl font-bold">
               quick links
             </h4>
-            <ul className="list-none capitalize">
-              <li className="text-lg my-4  lg:text-xl">
-                <a href="/">home</a>
+            <ul className="list-disc capitalize">
+              <li className="text-md my-4  lg:text-md">
+                <a href="/" className="">home</a>
               </li>
-              <li className="text-lg my-4 lg:text-xl">
-                <a href="/about">about us</a>
+              <li className="text-md my-4 lg:text-md">
+                <a href="/about" className="">about us</a>
               </li>
-              <li className="text-lg my-4 lg:text-xl">
-                <a href="/contact">contact us</a>
+              <li className="text-md my-4 lg:text-md">
+                <a href="/contact" className="">contact us</a>
               </li>
-              <li className="text-lg my-4 lg:text-xl">
-                <a href="/services">our services</a>
+              <li className="text-md my-4 lg:text-md">
+                <a href="/services" className="">our services</a>
               </li>
-              <li className="text-lg my-4 lg:text-xl">
-                <a href="/library">library</a>
+              <li className="text-md my-4 lg:text-md">
+                <a href="/library" className="">library</a>
               </li>
             </ul>
 
           </div>
           {/* contact */}
           <div className="my-4 text-white">
-            <h4 className="uppercase text-lg lg:text-2xl font-bold">
+            <h4 className="uppercase text-lg lg:text-xl font-bold">
               contact details
             </h4>
             <ul className="list-none ">
-              <li className="text-lg my-4 capitalize flex items-center gap-2 lg:text-xl">
+              <li className="text-md lg:text-md my-4 capitalize flex items-center gap-2">
                 <FaLocationArrow size={20} /><span>port-harcourt, nigeria</span>
               </li>
-              <li className="text-lg flex items-center gap-2  my-4 lg:text-xl">
+              <li className="text-md my-4 lg:text-md flex items-center gap-2">
                 <IoCall size={20} /><a href="tel:+2348149944531"> +2348149944531</a>
               </li>
 
